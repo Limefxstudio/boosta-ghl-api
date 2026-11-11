@@ -414,7 +414,7 @@
     var CONFIG={
       // Same-origin on Vercel. For a GHL-hosted page set window.BOOSTA_LEAD_API_URL
       // to the deployed absolute URL BEFORE this script runs.
-      submissionEndpoint:window.BOOSTA_LEAD_API_URL || '/api/lead'
+      window.BOOSTA_LEAD_API_URL = 'https://boosta-ghl-api.vercel.app/api/lead';
     };
     var $=function(id){return document.getElementById(id);};
     var form=$('boosta-lead-form'),questions=$('boosta-questions'),expand=$('boosta-expand'),error=$('boosta-error'),contactError=$('boosta-contact-error');
