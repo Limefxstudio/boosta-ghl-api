@@ -1,0 +1,147 @@
+<!-- BOOSTA CUSTOM QUALIFICATION FORM: use as standalone HTML on your site or a GHL Funnel Custom HTML block, NOT inside a native GHL Form Builder. Requires secure /api/lead endpoint. -->
+<div id="boosta-qualification" style="width:100%;max-width:720px;margin:0 auto;font-family:Inter,Arial,sans-serif;color:#10121a;">
+  <div style="background:#fff;border:1px solid #d9dce5;border-radius:12px;overflow:hidden;box-shadow:0 5px 25px rgba(20,30,70,.035);">
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;padding:19px 12px;border-bottom:1px solid #e8eaf0;font-size:12px;color:#828696;">
+      <span style="color:#6038dc;font-weight:700">● &nbsp;Enter your details</span><span style="width:26px;height:1px;background:#c9ceda"></span><span>● &nbsp;Book time slot</span>
+    </div>
+    <form id="boosta-lead-form" style="padding:28px clamp(14px,4vw,30px) 26px;" novalidate>
+      <div style="display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;background:linear-gradient(135deg,#2563eb,#6038dc);color:#fff;font-size:20px;border-radius:10px;margin-bottom:12px">✦</div>
+      <h2 style="font-size:clamp(23px,4vw,30px);line-height:1.2;letter-spacing:-.8px;font-weight:750;margin:0 0 6px;">Consultation Call</h2>
+      <p style="color:#737988;font-size:14px;line-height:1.55;margin:0 0 6px;">Let's see how Boosta can help grow your business with media, ads and AI.</p>
+      <p style="font-size:13px;color:#6b7280;margin:0 0 23px;"><strong>Note:</strong> Please choose the correct time zone when booking.</p>
+      <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>Website <input name="website" id="boosta-hp" tabindex="-1" autocomplete="off" /></label></div>
+      <div style="display:grid;gap:16px;">
+        <label style="display:block;font-size:13px;font-weight:650">Full Name <span style="color:#e24463">*</span><input id="boosta-name" name="name" autocomplete="name" placeholder="Your full name" required style="display:block;box-sizing:border-box;width:100%;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;padding:13px 14px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/></label>
+        <label style="display:block;font-size:13px;font-weight:650">Email <span style="color:#e24463">*</span><input id="boosta-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required style="display:block;box-sizing:border-box;width:100%;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;padding:13px 14px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/></label>
+      </div>
+      <button id="boosta-expand" type="button" style="width:100%;cursor:pointer;margin-top:22px;padding:14px 18px;border:0;border-radius:8px;background:linear-gradient(100deg,#2563eb,#6038dc);color:white;font-size:14px;font-weight:700;">Continue</button>
+      <div id="boosta-questions" hidden style="display:none;margin-top:22px;">
+        <label style="display:block;font-size:13px;font-weight:650;margin-bottom:20px;">Phone <span style="color:#e24463">*</span>
+          <span style="display:flex;width:100%;box-sizing:border-box;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;overflow:hidden;background:#fff;align-items:stretch;">
+            <select id="boosta-country" name="country" aria-label="Country calling code" style="flex:0 0 135px;min-width:0;max-width:45%;border:0;border-right:1px solid #d8dce6;background:#f8f9ff;color:#111827;padding:12px 7px;font-size:13px;cursor:pointer;outline-color:#6038dc;"></select>
+            <input id="boosta-phone" name="phoneNational" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="Phone number" required style="min-width:0;flex:1;box-sizing:border-box;border:0;padding:13px 12px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/>
+          </span>
+        </label>
+        <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">What's your total monthly business revenue in USD? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-revenue-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+        <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">What budget are you prepared to invest in growing your business? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-budget-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+        <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">Can you attend the consultation at the scheduled time from a quiet place? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-attendance-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+        <p style="font-size:11px;line-height:1.6;color:#7b8090;text-align:center;margin:18px 0 10px;">By continuing, you agree that Boosta may contact you about your consultation. Link your actual <a href="#" id="boosta-policy" style="color:#2563eb">Privacy Policy</a> before publishing.</p>
+        <p id="boosta-error" role="alert" aria-live="polite" style="display:none;color:#b42338;font-size:12px;margin:0 0 10px"></p>
+        <button id="boosta-submit" type="submit" style="width:100%;cursor:pointer;padding:14px 18px;border:0;border-radius:8px;background:linear-gradient(100deg,#2563eb,#6038dc);color:white;font-size:14px;font-weight:700;">Continue</button>
+      </div>
+      <p id="boosta-contact-error" role="alert" aria-live="polite" style="color:#b42338;font-size:12px;margin:12px 0 0;display:none"></p>
+    </form>
+    <div id="boosta-rejected" role="status" hidden style="display:none;padding:52px 26px;text-align:center;">
+      <div style="margin:0 auto 18px;width:58px;height:58px;border-radius:50%;background:#f3eaff;color:#6038dc;font-size:26px;display:flex;align-items:center;justify-content:center">✕</div>
+      <h3 style="margin:0 0 12px;font-size:26px;letter-spacing:-.5px">Not qualified at this time</h3>
+      <p style="font-size:14px;color:#737988;max-width:440px;margin:0 auto;line-height:1.7">Based on your answers, our consultation program doesn't appear to be the right fit for your business right now. Thank you for your interest in Boosta.</p>
+      <button id="boosta-retry" type="button" style="margin-top:24px;padding:12px 22px;border:1px solid #d9dce5;border-radius:8px;background:#fff;cursor:pointer;font-weight:700">Review my answers</button>
+    </div>
+    <div id="boosta-qualified-pending" role="status" hidden style="display:none;padding:48px 26px;text-align:center;">
+      <div style="margin:0 auto 16px;width:52px;height:52px;border-radius:50%;background:#e8f0ff;color:#2563eb;font-size:28px;display:flex;align-items:center;justify-content:center">✓</div>
+      <h3 style="margin:0 0 10px;font-size:24px">You qualify for a consultation</h3>
+      <p style="margin:0 auto;max-width:460px;color:#6b7280;font-size:14px;line-height:1.7">Your next step is to book a time. The calendar isn't connected on this page yet. Add the Boosta calendar code and configure its GoHighLevel URL.</p>
+      <button id="boosta-qualified-back" type="button" style="margin-top:22px;padding:12px 20px;background:#fff;border:1px solid #d9dce5;border-radius:8px;cursor:pointer">Back to form</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+  function init(){
+    var root=document.getElementById('boosta-qualification');
+    if(!root || root.dataset.initialized==='1')return;
+    root.dataset.initialized='1';
+    var CONFIG={
+      // Same-origin on Vercel. For a GHL-hosted page set window.BOOSTA_LEAD_API_URL
+      // to the deployed absolute URL BEFORE this script runs.
+      submissionEndpoint:window.BOOSTA_LEAD_API_URL || '/api/lead'
+    };
+    var $=function(id){return document.getElementById(id);};
+    var form=$('boosta-lead-form'),questions=$('boosta-questions'),expand=$('boosta-expand'),error=$('boosta-error'),contactError=$('boosta-contact-error');
+    // Select from country names and their country calling codes. Multiple territories can share a calling code.
+    var countries=[
+      ['PK','Pakistan','+92'],['US','United States','+1'],['GB','United Kingdom','+44'],['AE','United Arab Emirates','+971'],['SA','Saudi Arabia','+966'],['CA','Canada','+1'],['AU','Australia','+61'],['IN','India','+91'],['DE','Germany','+49'],['FR','France','+33'],['IT','Italy','+39'],['ES','Spain','+34'],['NL','Netherlands','+31'],['BE','Belgium','+32'],['CH','Switzerland','+41'],['AT','Austria','+43'],['SE','Sweden','+46'],['NO','Norway','+47'],['DK','Denmark','+45'],['FI','Finland','+358'],['IE','Ireland','+353'],['PT','Portugal','+351'],['PL','Poland','+48'],['CZ','Czechia','+420'],['GR','Greece','+30'],['TR','Türkiye','+90'],['RO','Romania','+40'],['HU','Hungary','+36'],['UA','Ukraine','+380'],['RU','Russia','+7'],['NZ','New Zealand','+64'],['SG','Singapore','+65'],['MY','Malaysia','+60'],['ID','Indonesia','+62'],['PH','Philippines','+63'],['TH','Thailand','+66'],['VN','Vietnam','+84'],['CN','China','+86'],['JP','Japan','+81'],['KR','South Korea','+82'],['HK','Hong Kong','+852'],['TW','Taiwan','+886'],['BD','Bangladesh','+880'],['LK','Sri Lanka','+94'],['NP','Nepal','+977'],['AF','Afghanistan','+93'],['IR','Iran','+98'],['IQ','Iraq','+964'],['QA','Qatar','+974'],['KW','Kuwait','+965'],['BH','Bahrain','+973'],['OM','Oman','+968'],['JO','Jordan','+962'],['LB','Lebanon','+961'],['IL','Israel','+972'],['EG','Egypt','+20'],['ZA','South Africa','+27'],['NG','Nigeria','+234'],['KE','Kenya','+254'],['GH','Ghana','+233'],['MA','Morocco','+212'],['TN','Tunisia','+216'],['UG','Uganda','+256'],['TZ','Tanzania','+255'],['ET','Ethiopia','+251'],['BR','Brazil','+55'],['MX','Mexico','+52'],['AR','Argentina','+54'],['CL','Chile','+56'],['CO','Colombia','+57'],['PE','Peru','+51'],['VE','Venezuela','+58'],['EC','Ecuador','+593'],['UY','Uruguay','+598'],['CR','Costa Rica','+506'],['PA','Panama','+507'],['DO','Dominican Republic','+1'],['JM','Jamaica','+1'],['IS','Iceland','+354'],['LU','Luxembourg','+352'],['MT','Malta','+356'],['CY','Cyprus','+357'],['HR','Croatia','+385'],['RS','Serbia','+381'],['BG','Bulgaria','+359'],['SK','Slovakia','+421'],['SI','Slovenia','+386'],['LT','Lithuania','+370'],['LV','Latvia','+371'],['EE','Estonia','+372'],['GE','Georgia','+995'],['AZ','Azerbaijan','+994'],['KZ','Kazakhstan','+7'],['UZ','Uzbekistan','+998']
+    ];
+    var select=$('boosta-country');
+    countries.sort(function(a,b){return a[1].localeCompare(b[1]);});
+    countries.forEach(function(c){var o=document.createElement('option');o.value=c[0];o.textContent=c[1]+' ('+c[2]+')';o.dataset.dial=c[2];select.appendChild(o);});
+    select.value='PK';
+    var sets={
+      'boosta-revenue-options':{name:'revenue',options:[['0','$0/month'],['1000','$1K–$2K/month'],['2000','$2K–$5K/month'],['5000','$5K–$10K/month'],['10000','$10K–$20K/month'],['20000','$20K–$50K/month'],['50000','$50K+/month']]},
+      'boosta-budget-options':{name:'budget',options:[['0','Less than $1K'],['1000','$1K–$3K'],['3000','$3K–$7K'],['7000','$7K–$15K'],['15000','$15K+']]},
+      'boosta-attendance-options':{name:'attendance',options:[['yes','Yes, I will attend the consultation'],['no','No, I cannot attend the consultation']]}
+    };
+    Object.keys(sets).forEach(function(id){
+      var section=sets[id];section.options.forEach(function(opt,i){
+        var label=document.createElement('label');
+        label.style.cssText='display:flex;align-items:center;gap:11px;box-sizing:border-box;min-height:40px;padding:10px 12px;background:#fff;color:#252939;font-size:13px;cursor:pointer;'+(i?'border-top:1px solid #d8dce6;':'');
+        var input=document.createElement('input');input.type='radio';input.name=section.name;input.value=opt[0];input.required=true;
+        input.style.cssText='width:16px;height:16px;margin:0;accent-color:#6038dc;flex-shrink:0';
+        label.appendChild(input);label.appendChild(document.createTextNode(opt[1]));$(id).appendChild(label);
+      });
+    });
+    function contactValid(){
+      if(!$('boosta-name').value.trim()){contactError.textContent='Please enter your full name.';contactError.style.display='block';$('boosta-name').focus();return false;}
+      if(!$('boosta-email').validity.valid||!$('boosta-email').value.trim()){contactError.textContent='Please enter a valid email address.';contactError.style.display='block';$('boosta-email').focus();return false;}
+      contactError.style.display='none';return true;
+    }
+    expand.addEventListener('click',function(){if(!contactValid())return;questions.hidden=false;questions.style.display='block';expand.style.display='none';questions.scrollIntoView({behavior:'smooth',block:'nearest'});});
+    function checked(name){var el=form.querySelector('input[name="'+name+'"]:checked');return el?el.value:null;}
+    function showError(message){error.textContent=message;error.style.display='block';error.scrollIntoView({behavior:'smooth',block:'nearest'});}
+    function showForm(){root.hidden=false;root.style.display='block';form.style.display='block';$('boosta-rejected').style.display='none';$('boosta-qualified-pending').style.display='none';root.scrollIntoView({behavior:'smooth',block:'start'});}
+    $('boosta-retry').addEventListener('click',showForm);
+    $('boosta-qualified-back').addEventListener('click',showForm);
+    window.addEventListener('boosta:back-to-form',showForm);
+    form.addEventListener('submit',async function(ev){
+      ev.preventDefault();error.style.display='none';
+      if(!contactValid())return;
+      if(questions.style.display==='none'){expand.click();return;}
+      var raw=$('boosta-phone').value.replace(/[^\d]/g,'');
+      var code=select.options[select.selectedIndex].dataset.dial;
+      // Drop common national trunk prefix for international E.164 formatting.
+      if(raw.charAt(0)==='0' && code!=='+1')raw=raw.substring(1);
+      var full=code+raw;
+      if(raw.length<6||raw.length>14||full.replace(/\D/g,'').length>15){$('boosta-phone').focus();showError('Enter a valid phone number for the selected country.');return;}
+      var revenue=checked('revenue'),budget=checked('budget'),attendance=checked('attendance');
+      if(revenue===null||budget===null||attendance===null){showError('Please answer all required questions before continuing.');return;}
+      var lead={name:$('boosta-name').value.trim(),email:$('boosta-email').value.trim(),country:select.value,phone:full,revenue:revenue,budget:budget,attendance:attendance,source:'Boosta qualification form'};
+      // Qualification is evaluated on the server, not trusted from the browser.
+       lead.website=$('boosta-hp').value;
+      var submit=$('boosta-submit');submit.disabled=true;submit.textContent='Checking eligibility…';
+      try{
+        const response=await fetch(CONFIG.submissionEndpoint,{
+          method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(lead)
+        });
+        const result=await response.json().catch(function(){return {};});
+        if(!response.ok || result.saved!==true || !result.contactId){
+          throw new Error(result.error || 'GHL contact save could not be confirmed');
+        }
+        // Only advance after HighLevel confirms the contact is saved.
+        if(!result.qualified){
+          if(window.BoostaSite && typeof window.BoostaSite.showRejection==='function'){
+            window.BoostaSite.showRejection();
+          }else{
+            form.style.display='none';$('boosta-rejected').hidden=false;
+            $('boosta-rejected').style.display='block';
+            root.scrollIntoView({behavior:'smooth',block:'start'});
+          }
+          return;
+        }
+        if(window.BoostaSite && typeof window.BoostaSite.showCalendar==='function'){
+          window.BoostaSite.showCalendar();return;
+        }
+        if(window.BoostaCalendar && typeof window.BoostaCalendar.show==='function'){
+          if(window.BoostaCalendar.show(lead))return;
+        }
+        form.style.display='none';$('boosta-qualified-pending').hidden=false;
+        $('boosta-qualified-pending').style.display='block';
+        root.scrollIntoView({behavior:'smooth',block:'start'});
+      }catch(err){console.error('Boosta qualification:',err);showError('Your details could not be saved right now. Please try again.');}
+      finally{submit.disabled=false;submit.textContent='Continue';}
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>

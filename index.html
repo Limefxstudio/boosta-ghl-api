@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Boosta brings media, paid advertising, and AI-powered systems together to help businesses grow. Book a consultation.">
+  <title>Boosta | Media, Ads & AI Built for Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101018;--muted:#666978;--line:#e4e5ed;--soft:#f8f9fd;--blue:#2465ec;--purple:#6545d9;--purple-dark:#5434bc;--lavender:#f1eeff;--radius:16px;--max:1130px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:120px}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #8ca7ff;outline-offset:3px}::selection{background:#e1d9ff;color:#161025}
+    .shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}.center{text-align:center}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .site-nav{position:fixed;z-index:100;top:14px;left:50%;transform:translateX(-50%);width:min(555px,calc(100% - 30px));min-height:60px;border:1px solid #e9e9ef;border-radius:100px;background:rgba(255,255,255,.94);box-shadow:0 5px 22px rgba(28,28,58,.055);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 9px 8px 15px;transition:box-shadow .3s,border-color .3s}
+    .site-nav.scrolled{box-shadow:0 12px 38px rgba(28,28,58,.12);border-color:#dedfeb}.brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;letter-spacing:-.9px;white-space:nowrap}.brand-mark{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#3979ff,#6545d9 75%);box-shadow:0 4px 10px rgba(101,69,217,.22)}.brand-mark svg{width:22px;height:22px;fill:none;stroke:white;stroke-width:2.5;stroke-linecap:round}.nav-cta,.primary-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:100px;background:var(--purple);color:#fff;font-weight:650;white-space:nowrap;box-shadow:0 6px 16px rgba(101,69,217,.15);transition:background .2s,transform .2s,box-shadow .2s}.nav-cta:hover,.primary-btn:hover{background:var(--purple-dark);transform:translateY(-2px);box-shadow:0 9px 25px rgba(101,69,217,.25)}.nav-cta{padding:13px 19px;font-size:12px;letter-spacing:-.1px}.primary-btn{padding:19px 29px;font-size:15px}
+    .hero{padding-top:132px}.eyebrow{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:500;color:#3f4051;letter-spacing:-.05px}.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--purple)}.hero h1{font-size:clamp(39px,4.25vw,61px);font-weight:750;line-height:1.11;letter-spacing:-.065em;max-width:960px;margin:23px auto 18px;text-wrap:balance}.gradient-text{background:linear-gradient(95deg,#2465ec 5%,#7046d8 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero .lead{font-size:clamp(15px,1.3vw,18px);line-height:1.75;max-width:735px;margin:0 auto;color:#3e4150;letter-spacing:-.025em;text-wrap:balance}.hero .lead strong{font-weight:650;color:#6040bd}.vsl-wrap{width:min(100%,850px);margin:39px auto 0}.video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#0d1124;isolation:isolate;box-shadow:0 7px 23px rgba(23,29,62,.09)}.video-frame video{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2}.video-frame video[hidden]{display:none}.vsl-poster{position:absolute;inset:0;z-index:1;overflow:hidden;background:radial-gradient(ellipse at 75% 35%,#3342a1 0,transparent 42%),radial-gradient(ellipse at 20% 85%,#3b278b 0,transparent 42%),linear-gradient(135deg,#0e1635,#16122b 70%)}.vsl-poster:before{content:"";position:absolute;width:55%;aspect-ratio:1;border:1px solid rgba(255,255,255,.18);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 75px rgba(255,255,255,.025),0 0 0 150px rgba(255,255,255,.02)}.vsl-poster:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,5,20,.48),transparent 42%)}.poster-content{position:absolute;z-index:1;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;color:#fff;text-align:center}.poster-content .poster-brand{font-size:13px;font-weight:750;letter-spacing:.32em;text-transform:uppercase;color:#b9b3f8}.poster-content strong{font-size:clamp(28px,4vw,52px);font-weight:750;letter-spacing:-.055em;line-height:1.07}.poster-content span:last-child{font-size:12px;color:#c4c5df}.video-play{position:absolute;z-index:5;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:84px;height:84px;border:1px solid rgba(255,255,255,.24);border-radius:50%;background:rgba(101,69,217,.85);color:#fff;backdrop-filter:blur(12px);transition:transform .25s,background .25s}.video-play:hover{transform:translate(-50%,-50%) scale(1.07);background:#7654e7}.video-play svg{width:32px;height:32px;fill:currentColor;transform:translateX(2px)}.video-frame.is-playing .video-play{opacity:0;pointer-events:none}.video-frame.is-playing:hover .video-play{opacity:1;pointer-events:auto}.video-controls{position:absolute;z-index:6;left:18px;right:18px;bottom:14px;display:flex;flex-direction:column;gap:11px;opacity:1;transition:opacity .2s}.video-frame.is-playing:not(:hover):not(:focus-within) .video-controls{opacity:0}.seek{appearance:none;width:100%;height:4px;margin:0;background:linear-gradient(to right,#a79bff 0%,rgba(255,255,255,.55) 0%);border-radius:8px;cursor:pointer}.seek::-webkit-slider-thumb{appearance:none;width:10px;height:10px;border-radius:50%;background:#fff;opacity:0}.video-frame:hover .seek::-webkit-slider-thumb{opacity:1}.control-row{display:flex;align-items:center;justify-content:space-between;color:#fff}.control-group{display:flex;align-items:center;gap:9px}.icon-btn{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:50%;background:rgba(108,81,201,.62);color:#fff;backdrop-filter:blur(8px)}.icon-btn:hover{background:#6e4dd7}.icon-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.time-label{font-size:11px;color:#f5f5ff;font-variant-numeric:tabular-nums}.speed-btn{width:auto;padding:0 12px;border-radius:50px;font-size:11px;font-weight:650}.video-note{font-size:11px;color:#848695;margin-top:11px;text-align:center}
+    .section{padding:126px 0 0}.section-kicker{display:inline-flex;align-items:center;gap:8px;color:#4e486f;font-size:12px;font-weight:500}.section-kicker:before{content:"";width:6px;height:6px;background:#7053d5;border-radius:50%}.section h2{font-size:clamp(34px,4vw,53px);font-weight:750;line-height:1.13;letter-spacing:-.058em;margin:17px 0 14px;text-wrap:balance}.section-intro{font-size:16px;line-height:1.65;color:#545765;margin:0 auto;max-width:680px}.booking-section{padding-top:124px}.booking-shell{width:min(100%,755px);margin:32px auto 0;border:1px solid #dedee7;border-radius:11px;overflow:hidden;background:#fff;box-shadow:0 7px 28px rgba(31,31,54,.035)}.booking-stepbar{display:flex;align-items:center;justify-content:center;gap:22px;min-height:57px;border-bottom:1px solid #e9e9ef;padding:13px;font-size:12px;color:#8b8d9a}.booking-step{display:flex;align-items:center;gap:7px;white-space:nowrap}.booking-step i{width:8px;height:8px;border-radius:50%;background:#d1d1d9}.booking-step.active{color:#27223c;font-weight:650}.booking-step.active i{background:#6545d9}.booking-step.done i{background:#27a46c}.step-line{width:26px;height:1px;background:#d6d7df}.booking-pane{padding:24px 22px 26px}.booking-pane[hidden]{display:none!important}.iframe-holder{width:100%;position:relative}.iframe-holder iframe{display:block;width:100%;min-height:630px;border:0;overflow:hidden;background:#fff}.booking-hint{margin:0 0 15px;font-size:13px;line-height:1.6;color:#777986;text-align:center}.booking-state{padding:62px 20px;text-align:center}.booking-state .state-icon{width:56px;height:56px;margin:0 auto 18px;display:grid;place-items:center;border-radius:50%;background:#f1eeff;color:#6545d9;font-size:25px}.booking-state h3{font-size:26px;letter-spacing:-.04em;margin:0 0 10px}.booking-state p{max-width:480px;margin:0 auto;color:#656876;line-height:1.7;font-size:14px}.back-btn{margin-top:22px;border:1px solid #dedee7;background:#fff;color:#282a38;padding:12px 19px;border-radius:8px;font-weight:650}.back-btn:hover{background:#f8f8fd}.calendar-pane iframe{min-height:700px}.booking-footer{border-top:1px solid #ededf1;padding:13px;text-align:center;font-size:11px;color:#9b9ca8}.booking-footer b{color:#6245cf;font-weight:750}
+    .stories{padding-top:137px}.story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 26px;width:min(100%,970px);margin:38px auto 0}.story-card{text-align:center}.story-media{position:relative;aspect-ratio:16/9;border-radius:13px;overflow:hidden;background:linear-gradient(135deg,#15152e,#32347a 60%,#7154d2);isolation:isolate}.story-card:nth-child(2) .story-media{background:linear-gradient(135deg,#0c182b,#14507d 55%,#4e76c8)}.story-card:nth-child(3) .story-media{background:linear-gradient(135deg,#211831,#6239a3 60%,#af75bd)}.story-card:nth-child(4) .story-media{background:linear-gradient(135deg,#141e3b,#3454b6 60%,#8b5bcb)}.story-media:before{content:"";position:absolute;width:70%;height:160%;left:-15%;top:-30%;border-radius:50%;border:1px solid rgba(255,255,255,.16);box-shadow:0 0 0 46px rgba(255,255,255,.04),0 0 0 100px rgba(255,255,255,.025)}.story-media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,9,27,.64),transparent 62%)}.story-wordmark{position:absolute;z-index:1;top:19px;left:20px;color:#e1e2ff;font-size:12px;font-weight:750;letter-spacing:.24em}.story-placeholder{position:absolute;z-index:1;bottom:20px;left:20px;right:20px;color:#fff;text-align:left}.story-placeholder small{display:block;font-size:11px;letter-spacing:.16em;color:#c8c6ef;margin-bottom:7px}.story-placeholder strong{display:block;font-size:clamp(20px,2.2vw,29px);letter-spacing:-.045em}.story-play{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:58px;height:58px;border:0;border-radius:50%;background:#6545d9;color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.2);transition:transform .2s,background .2s}.story-play:hover{transform:translate(-50%,-50%) scale(1.08);background:#795ce5}.story-play svg{width:23px;height:23px;fill:currentColor;transform:translateX(2px)}.story-tag{display:inline-flex;margin-top:12px;padding:5px 10px;border-radius:100px;background:#f1eeff;color:#5f45b4;font-size:10px;font-weight:700;letter-spacing:.025em}.story-name{margin:7px 0 0;font-size:12px;font-weight:650}.story-meta{margin:4px 0 0;font-size:11px;color:#9697a1}
+    .results{padding-top:145px;overflow:hidden}.metrics{display:flex;justify-content:center;gap:72px;margin:38px 0 42px}.metric-value{font-size:clamp(32px,4vw,45px);font-weight:750;letter-spacing:-.06em;line-height:1}.metric-label{font-size:10px;font-weight:750;letter-spacing:.065em;color:#6550b0;margin-top:8px;text-transform:uppercase}.metric-note{font-size:11px;color:#9596a0;margin-top:6px}.metric-disclaimer{font-size:11px;color:#8a8c99;margin:-22px auto 30px;max-width:520px;line-height:1.5}.marquee-toggle{display:inline-flex;align-items:center;gap:7px;border:1px solid #e1e1e9;border-radius:100px;background:#fff;padding:11px 16px;color:#777a87;font-size:12px;transition:background .2s}.marquee-toggle:hover{background:#f7f6fc}.marquee-zone{margin-top:24px;display:grid;gap:19px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}.marquee-row{display:flex;gap:18px;width:max-content;animation:marquee-left 65s linear infinite;will-change:transform}.marquee-row.reverse{animation-name:marquee-right;animation-duration:74s;transform:translateX(-50%)}.marquee-row:hover,.marquee-row:focus-within,.marquee-zone.paused .marquee-row{animation-play-state:paused}.marquee-track{display:flex;gap:18px;flex-shrink:0}.quote-card{display:flex;flex-direction:column;justify-content:space-between;width:294px;height:242px;border:1px solid #dddfe8;border-radius:15px;background:#fff;box-shadow:0 2px 4px rgba(18,18,31,.06);padding:18px 18px 16px;text-align:left;white-space:normal}.quote-stars{color:#7354d8;font-size:13px;letter-spacing:3px}.quote-body{font-size:14px;line-height:1.65;color:#30323c;letter-spacing:-.012em;margin:10px 0 auto}.quote-bottom{border-top:1px solid #e7e7ec;margin-top:16px;padding-top:11px}.quote-pill{display:block;width:100%;background:#f1eeff;color:#6651b1;border-radius:100px;padding:5px 9px;font-size:10px;font-weight:750;letter-spacing:.02em}.quote-author{font-size:12px;font-weight:700;margin-top:9px}.quote-role{font-size:11px;color:#9a9ca6;margin-top:2px}@keyframes marquee-left{to{transform:translateX(-50%)}}@keyframes marquee-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+    .final-cta{padding:94px 24px 103px;text-align:center}.final-cta p{font-size:15px;color:#686a78;margin:0 0 24px}.site-footer{background:#101018;color:#fff;padding:49px 0 34px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand{font-size:22px;font-weight:800;letter-spacing:-.065em}.footer-caption{font-size:12px;color:#8f90a4;margin-top:6px}.footer-links{display:flex;gap:27px}.footer-link{background:none;border:0;color:#c6c6d2;font-size:12px;padding:5px 0}.footer-link:hover{color:#fff}.copyright{font-size:11px;color:#747589;margin-top:28px}
+    .modal{position:fixed;inset:0;z-index:500;background:rgba(9,9,22,.85);display:grid;place-items:center;padding:20px;backdrop-filter:blur(12px)}.modal[hidden]{display:none}.modal-dialog{width:min(900px,100%);position:relative}.modal-close{position:absolute;right:0;top:-49px;width:36px;height:36px;border-radius:50%;background:#fff;border:0;color:#161627;font-size:23px}.modal-media{aspect-ratio:16/9;background:#101018;border-radius:13px;overflow:hidden}.modal-media iframe{width:100%;height:100%;border:0}.toast{position:fixed;z-index:600;bottom:22px;left:50%;transform:translate(-50%,20px);max-width:min(90vw,450px);padding:14px 20px;border-radius:12px;background:#18182c;color:#fff;font-size:13px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+    [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}[data-reveal].visible{opacity:1;transform:none}
+    @media(max-width:760px){.shell{width:min(calc(100% - 34px),var(--max))}.hero{padding-top:122px}.hero h1{letter-spacing:-.055em}.hero .lead{line-height:1.65}.vsl-wrap{margin-top:29px}.section{padding-top:99px}.booking-section{padding-top:100px}.story-grid{gap:30px 15px}.stories,.results{padding-top:105px}.metrics{gap:42px}.booking-pane{padding:15px 10px}.site-footer{padding:38px 0}.footer-inner{align-items:flex-start;flex-direction:column}.marquee-zone{mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}}
+    @media(max-width:550px){.site-nav{top:10px;min-height:55px;padding:7px 7px 7px 11px}.brand{font-size:16px;gap:7px}.brand-mark{width:29px;height:29px}.nav-cta{padding:11px 12px;font-size:10px}.hero h1{font-size:clamp(35px,9vw,46px);margin-top:20px}.hero .lead{font-size:14px}.video-frame{border-radius:10px}.video-play{width:63px;height:63px}.video-play svg{width:25px;height:25px}.video-controls{left:9px;right:9px;bottom:7px;gap:7px}.icon-btn{width:28px;height:28px}.icon-btn svg{width:14px;height:14px}.control-group{gap:4px}.time-label{font-size:9px}.speed-btn{padding:0 8px}.poster-content strong{font-size:27px}.poster-content .poster-brand{font-size:10px}.poster-content span:last-child{font-size:10px}.video-note{font-size:10px}.section h2{font-size:clamp(34px,9vw,43px)}.section-intro{font-size:14px}.story-grid{grid-template-columns:1fr;max-width:440px;gap:32px}.story-placeholder strong{font-size:27px}.booking-shell{margin-top:26px}.booking-stepbar{gap:9px;font-size:10px}.step-line{width:18px}.iframe-holder iframe{min-height:710px}.calendar-pane iframe{min-height:720px}.metrics{gap:28px}.metric-label{font-size:9px}.quote-card{width:270px;height:234px}.quote-body{font-size:13px}.final-cta{padding:75px 20px 90px}.primary-btn{padding:17px 24px;font-size:13px}}
+    /* Mobile keeps native touch scrolling while GSAP animates text and sections. */
+    @media(max-width:760px){
+      .site-nav{left:50%!important;right:auto!important;transform:translateX(-50%)!important;
+        width:calc(100% - 28px)!important;max-width:440px;min-width:0;box-sizing:border-box;
+        display:flex;align-items:center;justify-content:space-between;gap:8px;
+        padding:7px 8px 7px 11px;opacity:1!important;visibility:visible!important}
+      .site-nav .brand{min-width:0;flex:0 0 auto;font-size:16px;gap:7px}
+      .site-nav .brand-mark{flex-shrink:0;width:29px;height:29px}
+      .site-nav .nav-cta{min-width:0;max-width:calc(100% - 125px);padding:11px 12px;
+        font-size:11px;line-height:1.2;text-align:center;white-space:normal;gap:5px}
+      .site-nav .nav-cta span{flex-shrink:0}
+      .marquee-zone{display:grid!important;visibility:visible!important;opacity:1!important;
+        min-height:220px;mask-image:none!important;-webkit-mask-image:none!important}
+      .marquee-row{display:flex!important;visibility:visible!important;opacity:1!important}
+      .quote-card{flex-shrink:0}
+      .motion-scroll-progress{display:none}
+    }
+    @media(max-width:360px){.site-nav .brand{font-size:14px}
+      .site-nav .nav-cta{font-size:10px;padding:9px 10px;max-width:calc(100% - 112px)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.marquee-row{animation:none!important}[data-reveal]{opacity:1;transform:none}}
+
+    /* BOOSTA MOTION SYSTEM — respects reduced motion and retains a no-GSAP fallback. */
+    html.lenis,html.lenis body{height:auto}
+    html.lenis.lenis-smooth{scroll-behavior:auto!important}
+    html.lenis.lenis-stopped{overflow:hidden}
+    html.motion-ready [data-reveal]{opacity:1;transform:none;transition:none}
+    .motion-word{display:inline-block;white-space:nowrap;vertical-align:baseline}
+    .motion-char{display:inline-block;will-change:transform,opacity;transform-origin:50% 100%}
+    .motion-cta-inner{display:inline-flex;align-items:center;justify-content:center;gap:8px;will-change:transform}
+    .motion-scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:130;pointer-events:none;background:linear-gradient(90deg,#2465ec,#6545d9 62%,#9472ff);transform:scaleX(0);transform-origin:left center}
+    .gradient-text{background-size:200% 100%;background-position:0% 50%}
+    .primary-btn{position:relative;isolation:isolate;overflow:hidden}
+    .primary-btn::after{content:"";position:absolute;z-index:-1;top:-70%;bottom:-70%;width:34%;left:-65%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);transform:skewX(-22deg);pointer-events:none;transition:left .8s cubic-bezier(.2,.7,.2,1)}
+    .primary-btn:hover::after{left:130%}
+    .story-media{transform-origin:center center}
+    .quote-card{transition:box-shadow .3s ease,border-color .3s ease,background .3s ease}
+    .quote-card:hover{box-shadow:0 12px 30px rgba(66,49,132,.13);border-color:#bcb1ec;background:#fefeff}
+    .marquee-row{backface-visibility:hidden}
+    @media(prefers-reduced-motion:reduce){.motion-scroll-progress{display:none}.motion-char{will-change:auto}.primary-btn::after{display:none}}
+  </style>
+</head>
+<body>
+  <div class="motion-scroll-progress" id="motionProgress" aria-hidden="true"></div>
+  <nav class="site-nav" aria-label="Main navigation" id="siteNav">
+    <a class="brand" href="#top" aria-label="Boosta home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12v-3m3 9V6m3 13V5m3 12V7m3 13V4m3 13V7m3 7v-4"/></svg></span><span>boosta<span style="color:#6545d9">.</span></span></a>
+    <a class="nav-cta" href="#consultation">Book a Free Consultation <span aria-hidden="true">↗</span></a>
+  </nav>
+  <main id="top">
+    <header class="hero center shell">
+      <div class="eyebrow" data-reveal><span class="dot"></span> Media. Paid ads. AI integrations.</div>
+      <h1 data-reveal>More than attention.<br><span class="gradient-text">Growth that moves your business forward.</span></h1>
+      <p class="lead" data-reveal>We bring <strong>high-impact media, performance advertising, and intelligent automations</strong> together so your business can attract better leads and turn more opportunities into customers.</p>
+      <div class="vsl-wrap" data-reveal>
+        <div class="video-frame" id="heroVideoFrame">
+          <div class="vsl-poster" id="vslPoster" aria-hidden="true"><div class="poster-content"><span class="poster-brand">BOOSTA</span><strong>Built to move<br>business forward.</strong><span>INTRODUCING THE BOOSTA APPROACH</span></div></div>
+          <video id="heroVideo" playsinline preload="metadata" aria-label="Boosta video presentation"></video>
+          <button class="video-play" id="bigPlay" aria-label="Play video"><svg viewBox="0 0 24 24"><path d="m6 3 15 9-15 9z"/></svg></button>
+          <div class="video-controls" aria-label="Video controls">
+            <input class="seek" id="videoSeek" type="range" min="0" max="100" value="0" aria-label="Video progress">
+            <div class="control-row"><div class="control-group">
+              <button class="icon-btn" id="smallPlay" aria-label="Play or pause"><svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></svg></button>
+              <button class="icon-btn" id="rewind" aria-label="Rewind 10 seconds"><svg viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2 6M3 4v7h7"/><path d="M9 11v4m3-4v4"/></svg></button>
+              <button class="icon-btn" id="mute" aria-label="Mute or unmute"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"/></svg></button>
+              <span class="time-label" id="videoTime">0:00 / 0:00</span>
+            </div><div class="control-group">
+              <button class="icon-btn speed-btn" id="speed" aria-label="Playback speed">1×</button>
+              <button class="icon-btn" id="fullscreen" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+            </div></div>
+          </div>
+        </div>
+        <p class="video-note">Boosta's VSL will appear here once the video URL is added.</p>
+      </div>
+    </header>
+    <section class="section booking-section shell center" id="consultation" aria-labelledby="bookingHeading">
+      <div class="section-kicker" data-reveal>Let's talk growth</div>
+      <h2 id="bookingHeading" data-reveal>Book a Consultation Call</h2>
+      <p class="section-intro" data-reveal>Tell us about your business and find out whether Boosta is the right fit.</p>
+      <div class="booking-shell">
+        <div class="booking-stepbar" aria-label="Booking progress"><span class="booking-step active" id="formStep"><i></i> Enter your details</span><span class="step-line"></span><span class="booking-step" id="calendarStep"><i></i> Book time slot</span></div>
+        <div class="booking-pane" id="formPane">
+          <p class="booking-hint">Complete the short qualification form to continue to available appointment times.</p>
+          <!-- BOOSTA QUALIFICATION FORM: paste into a GHL Custom HTML/JS element. Place calendar element BELOW it on same page. -->
+          <div id="boosta-qualification" style="width:100%;max-width:720px;margin:0 auto;font-family:Inter,Arial,sans-serif;color:#10121a;">
+            <div style="background:#fff;border:1px solid #d9dce5;border-radius:12px;overflow:hidden;box-shadow:0 5px 25px rgba(20,30,70,.035);">
+              <div style="display:flex;align-items:center;justify-content:center;gap:12px;padding:19px 12px;border-bottom:1px solid #e8eaf0;font-size:12px;color:#828696;">
+                <span style="color:#6038dc;font-weight:700">● &nbsp;Enter your details</span><span style="width:26px;height:1px;background:#c9ceda"></span><span>● &nbsp;Book time slot</span>
+              </div>
+              <form id="boosta-lead-form" style="padding:28px clamp(14px,4vw,30px) 26px;" novalidate>
+                <div style="display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;background:linear-gradient(135deg,#2563eb,#6038dc);color:#fff;font-size:20px;border-radius:10px;margin-bottom:12px">✦</div>
+                <h2 style="font-size:clamp(23px,4vw,30px);line-height:1.2;letter-spacing:-.8px;font-weight:750;margin:0 0 6px;">Consultation Call</h2>
+                <p style="color:#737988;font-size:14px;line-height:1.55;margin:0 0 6px;">Let's see how Boosta can help grow your business with media, ads and AI.</p>
+                <p style="font-size:13px;color:#6b7280;margin:0 0 23px;"><strong>Note:</strong> Please choose the correct time zone when booking.</p>
+                <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>Website <input name="website" id="boosta-hp" tabindex="-1" autocomplete="off" /></label></div>
+                <div style="display:grid;gap:16px;">
+                  <label style="display:block;font-size:13px;font-weight:650">Full Name <span style="color:#e24463">*</span><input id="boosta-name" name="name" autocomplete="name" placeholder="Your full name" required style="display:block;box-sizing:border-box;width:100%;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;padding:13px 14px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/></label>
+                  <label style="display:block;font-size:13px;font-weight:650">Email <span style="color:#e24463">*</span><input id="boosta-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required style="display:block;box-sizing:border-box;width:100%;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;padding:13px 14px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/></label>
+                </div>
+                <button id="boosta-expand" type="button" style="width:100%;cursor:pointer;margin-top:22px;padding:14px 18px;border:0;border-radius:8px;background:linear-gradient(100deg,#2563eb,#6038dc);color:white;font-size:14px;font-weight:700;">Continue</button>
+                <div id="boosta-questions" hidden style="display:none;margin-top:22px;">
+                  <label style="display:block;font-size:13px;font-weight:650;margin-bottom:20px;">Phone <span style="color:#e24463">*</span>
+                    <span style="display:flex;width:100%;box-sizing:border-box;margin-top:7px;border:1px solid #d8dce6;border-radius:8px;overflow:hidden;background:#fff;align-items:stretch;">
+                      <select id="boosta-country" name="country" aria-label="Country calling code" style="flex:0 0 135px;min-width:0;max-width:45%;border:0;border-right:1px solid #d8dce6;background:#f8f9ff;color:#111827;padding:12px 7px;font-size:13px;cursor:pointer;outline-color:#6038dc;"></select>
+                      <input id="boosta-phone" name="phoneNational" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="Phone number" required style="min-width:0;flex:1;box-sizing:border-box;border:0;padding:13px 12px;color:#111827;background:#fff;font:inherit;font-weight:400;font-size:14px;outline-color:#6038dc"/>
+                    </span>
+                  </label>
+                  <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">What's your total monthly business revenue in USD? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-revenue-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+                  <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">What budget are you prepared to invest in growing your business? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-budget-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+                  <fieldset style="padding:0;margin:0 0 20px;border:0"><legend style="font-size:13px;font-weight:650;line-height:1.5">Can you attend the consultation at the scheduled time from a quiet place? <span style="color:#e24463">*</span></legend><p style="color:#7b8090;font-size:12px;margin:4px 0 10px">Choose one</p><div id="boosta-attendance-options" style="border:1px solid #d8dce6;border-radius:8px;overflow:hidden"></div></fieldset>
+                  <p style="font-size:11px;line-height:1.6;color:#7b8090;text-align:center;margin:18px 0 10px;">By continuing, you agree that Boosta may contact you about your consultation. Link your actual <a href="#" id="boosta-policy" style="color:#2563eb">Privacy Policy</a> before publishing.</p>
+                  <p id="boosta-error" role="alert" aria-live="polite" style="display:none;color:#b42338;font-size:12px;margin:0 0 10px"></p>
+                  <button id="boosta-submit" type="submit" style="width:100%;cursor:pointer;padding:14px 18px;border:0;border-radius:8px;background:linear-gradient(100deg,#2563eb,#6038dc);color:white;font-size:14px;font-weight:700;">Continue</button>
+                </div>
+                <p id="boosta-contact-error" role="alert" aria-live="polite" style="color:#b42338;font-size:12px;margin:12px 0 0;display:none"></p>
+              </form>
+              <div id="boosta-rejected" role="status" hidden style="display:none;padding:52px 26px;text-align:center;">
+                <div style="margin:0 auto 18px;width:58px;height:58px;border-radius:50%;background:#f3eaff;color:#6038dc;font-size:26px;display:flex;align-items:center;justify-content:center">✕</div>
+                <h3 style="margin:0 0 12px;font-size:26px;letter-spacing:-.5px">Not qualified at this time</h3>
+                <p style="font-size:14px;color:#737988;max-width:440px;margin:0 auto;line-height:1.7">Based on your answers, our consultation program doesn't appear to be the right fit for your business right now. Thank you for your interest in Boosta.</p>
+                <button id="boosta-retry" type="button" style="margin-top:24px;padding:12px 22px;border:1px solid #d9dce5;border-radius:8px;background:#fff;cursor:pointer;font-weight:700">Review my answers</button>
+              </div>
+              <div id="boosta-qualified-pending" role="status" hidden style="display:none;padding:48px 26px;text-align:center;">
+                <div style="margin:0 auto 16px;width:52px;height:52px;border-radius:50%;background:#e8f0ff;color:#2563eb;font-size:28px;display:flex;align-items:center;justify-content:center">✓</div>
+                <h3 style="margin:0 0 10px;font-size:24px">You qualify for a consultation</h3>
+                <p style="margin:0 auto;max-width:460px;color:#6b7280;font-size:14px;line-height:1.7">Your next step is to book a time. The calendar isn't connected on this page yet. Add the Boosta calendar code and configure its GoHighLevel URL.</p>
+                <button id="boosta-qualified-back" type="button" style="margin-top:22px;padding:12px 20px;background:#fff;border:1px solid #d9dce5;border-radius:8px;cursor:pointer">Back to form</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking-pane calendar-pane" id="calendarPane" hidden>
+          <p class="booking-hint">You're through to the next step. Choose an available time that works for you.</p>
+          <div class="iframe-holder"><iframe id="mytZluOzftOWFfYeiNcZ_1794378122729" title="Boosta consultation booking calendar" data-src="https://link.360innervision.com/widget/booking/mytZluOzftOWFfYeiNcZ" allow="payment" scrolling="no" style="width:100%;min-height:700px;border:none;overflow:hidden" loading="lazy"></iframe></div>
+          <button class="back-btn" id="backToForm" type="button">← Back to details</button>
+        </div>
+        <div class="booking-pane booking-state" id="rejectedPane" hidden role="status"><div class="state-icon" aria-hidden="true">✕</div><h3>Not qualified at this time</h3><p>Based on the information provided, this consultation may not be the right fit for your business right now. Thank you for considering Boosta.</p><button class="back-btn" id="retryForm" type="button">Review my details</button></div>
+        <div class="booking-footer">Consultations and bookings powered by <b>GoHighLevel</b></div>
+      </div>
+    </section>
+    <section class="section stories shell center" id="stories" aria-labelledby="storiesHeading">
+      <div class="section-kicker" data-reveal>Client stories</div><h2 id="storiesHeading" data-reveal>Real businesses. Real progress.</h2><p class="section-intro" data-reveal>See what it looks like when creative, advertising, and smart systems work together.</p>
+      <div class="story-grid" id="storyGrid">
+        <article class="story-card" data-reveal><div class="story-media"><span class="story-wordmark">BOOSTA</span><div class="story-placeholder"><small>CLIENT STORY 01</small><strong>Your client's story goes here.</strong></div><button class="story-play" aria-label="Play client story 1" data-video-url=""><svg viewBox="0 0 24 24"><path d="m6 3 15 9-15 9z"/></svg></button></div><span class="story-tag">VIDEO TESTIMONIAL</span><p class="story-name">Olivia Bennett</p><p class="story-meta">Client testimonial preview</p></article>
+        <article class="story-card" data-reveal><div class="story-media"><span class="story-wordmark">BOOSTA</span><div class="story-placeholder"><small>CLIENT STORY 02</small><strong>From challenge to momentum.</strong></div><button class="story-play" aria-label="Play client story 2" data-video-url=""><svg viewBox="0 0 24 24"><path d="m6 3 15 9-15 9z"/></svg></button></div><span class="story-tag">VIDEO TESTIMONIAL</span><p class="story-name">Daniel Foster</p><p class="story-meta">Client testimonial preview</p></article>
+        <article class="story-card" data-reveal><div class="story-media"><span class="story-wordmark">BOOSTA</span><div class="story-placeholder"><small>CLIENT STORY 03</small><strong>Better systems. Better outcomes.</strong></div><button class="story-play" aria-label="Play client story 3" data-video-url=""><svg viewBox="0 0 24 24"><path d="m6 3 15 9-15 9z"/></svg></button></div><span class="story-tag">VIDEO TESTIMONIAL</span><p class="story-name">Sophia Carter</p><p class="story-meta">Client testimonial preview</p></article>
+        <article class="story-card" data-reveal><div class="story-media"><span class="story-wordmark">BOOSTA</span><div class="story-placeholder"><small>CLIENT STORY 04</small><strong>What working with Boosta looks like.</strong></div><button class="story-play" aria-label="Play client story 4" data-video-url=""><svg viewBox="0 0 24 24"><path d="m6 3 15 9-15 9z"/></svg></button></div><span class="story-tag">VIDEO TESTIMONIAL</span><p class="story-name">Marcus Reed</p><p class="story-meta">Client testimonial preview</p></article>
+      </div>
+    </section>
+    <section class="section results center" id="results" aria-labelledby="resultsHeading">
+      <div class="shell"><div class="section-kicker" data-reveal>Client results</div><h2 id="resultsHeading" data-reveal>The numbers don't lie.</h2><p class="section-intro" data-reveal>Real client results, backed by the work. The proof is in the outcomes.</p>
+        <div class="metrics" data-reveal>
+          <div><div class="metric-value">$XXM+</div><div class="metric-label">Revenue generated</div></div>
+          <div><div class="metric-value">100%</div><div class="metric-label">Client-focused</div></div>
+        </div>
+        <p class="metric-disclaimer">Revenue figure is a design placeholder. Replace with Boosta's verified results before publishing.</p>
+        <button class="marquee-toggle" id="pauseMarquee" type="button" aria-pressed="false"><span id="pauseIcon">Ⅱ</span> <span id="pauseLabel">Pause testimonial scrolling</span></button>
+      </div>
+      <div class="marquee-zone" id="marqueeZone" aria-label="Scrolling testimonial placeholders">
+        <div class="marquee-row" id="marqueeRow1"><div class="marquee-track"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Olivia Bennett</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Daniel Foster</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Sophia Carter</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Marcus Reed</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Emily Parker</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">James Wilson</div><div class="quote-role">Client testimonial preview</div></div></article></div><div class="marquee-track" aria-hidden="true"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Olivia Bennett</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Daniel Foster</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Sophia Carter</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Marcus Reed</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Emily Parker</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">James Wilson</div><div class="quote-role">Client testimonial preview</div></div></article></div></div><div class="marquee-row reverse" id="marqueeRow2"><div class="marquee-track"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Isabella Brooks</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Noah Mitchell</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Charlotte Hayes</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Ethan Collins</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Amelia Turner</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Liam Roberts</div><div class="quote-role">Client testimonial preview</div></div></article></div><div class="marquee-track" aria-hidden="true"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Isabella Brooks</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Noah Mitchell</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Charlotte Hayes</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Ethan Collins</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Amelia Turner</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Liam Roberts</div><div class="quote-role">Client testimonial preview</div></div></article></div></div><div class="marquee-row" id="marqueeRow3"><div class="marquee-track"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Grace Morgan</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Alexander Scott</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Mia Harrison</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Benjamin Clarke</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Ava Richardson</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Lucas Taylor</div><div class="quote-role">Client testimonial preview</div></div></article></div><div class="marquee-track" aria-hidden="true"><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Client testimonial placeholder. Add the approved review text here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Grace Morgan</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Example feedback card. Replace this with a real Boosta client quote.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Alexander Scott</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This space is reserved for a verified client experience.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Mia Harrison</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Approved feedback about media, advertising or AI integrations goes here.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Benjamin Clarke</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">Add a short client quote with permission to publish.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Ava Richardson</div><div class="quote-role">Client testimonial preview</div></div></article><article class="quote-card"><div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body">This card is ready for an authentic Boosta client review.</p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author">Lucas Taylor</div><div class="quote-role">Client testimonial preview</div></div></article></div></div>
+      </div>
+    </section>
+    <div class="final-cta"><p>Ready to see what Boosta could do for your business?</p><a class="primary-btn" href="#consultation">Book Your Consultation Call <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer"><div class="shell"><div class="footer-inner"><div><div class="footer-brand">boosta<span style="color:#927bff">.</span></div><div class="footer-caption">Media, ads, and intelligent growth systems.</div></div><div class="footer-links"><button class="footer-link" type="button" data-pending="Privacy Policy">Privacy Policy</button><button class="footer-link" type="button" data-pending="Terms of Service">Terms of Service</button></div></div><div class="copyright">© <span id="year"></span> Boosta. All rights reserved.</div></div></footer>
+  <div class="modal" id="videoModal" hidden role="dialog" aria-modal="true" aria-label="Client testimonial video"><div class="modal-dialog"><button class="modal-close" id="closeModal" type="button" aria-label="Close video">×</button><div class="modal-media" id="modalMedia"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!-- GSAP ScrollTrigger + Lenis smooth scrolling. Native scrolling and CSS reveals remain as fallbacks. -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script src="https://link.360innervision.com/js/form_embed.js" type="text/javascript" defer></script>
+  <script>
+  (function(){'use strict';
+    /* EDIT HERE: add a direct MP4/WebM URL for your VSL. YouTube/Vimeo embeds need a separate player adapter. */
+    const CONFIG={vslVideoUrl:'',formId:'DSmDLB8OHUOtf7KtnroB',calendarId:'mytZluOzftOWFfYeiNcZ'};
+    const $=id=>document.getElementById(id);const toast=$('toast');let toastTimer;
+    function notify(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3400)}
+    $('year').textContent=new Date().getFullYear();
+    const nav=$('siteNav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
+    if(!window.gsap || !window.ScrollTrigger || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      // With animation libraries blocked, keep every section readable rather than hidden.
+      document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('visible'));
+    }
+    /* Video player: native controls drawn in HTML, no third-party overlay. */
+    const video=$('heroVideo'),frame=$('heroVideoFrame'),seek=$('videoSeek'),bigPlay=$('bigPlay'),smallPlay=$('smallPlay'),mute=$('mute');
+    if(CONFIG.vslVideoUrl){video.src=CONFIG.vslVideoUrl;video.poster='';$('vslPoster').style.display='none';document.querySelector('.video-note').style.display='none'}
+    video.hidden=!CONFIG.vslVideoUrl;
+    const hasVsl=()=>Boolean(CONFIG.vslVideoUrl);
+    async function togglePlay(){if(!hasVsl()){notify('The Boosta VSL will be added here.');return}try{if(video.paused)await video.play();else video.pause()}catch(e){notify('Unable to play this video. Please check the VSL URL.')}}
+    bigPlay.addEventListener('click',togglePlay);smallPlay.addEventListener('click',togglePlay);video.addEventListener('click',togglePlay);
+    video.addEventListener('play',()=>{frame.classList.add('is-playing');smallPlay.setAttribute('aria-label','Pause')});video.addEventListener('pause',()=>{frame.classList.remove('is-playing');smallPlay.setAttribute('aria-label','Play')});
+    function fmt(sec){if(!Number.isFinite(sec))return'0:00';const s=Math.floor(sec);return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+    video.addEventListener('timeupdate',()=>{const pct=video.duration?video.currentTime/video.duration*100:0;seek.value=String(pct);seek.style.background='linear-gradient(to right,#a79bff '+pct+'%,rgba(255,255,255,.55) '+pct+'%)';$('videoTime').textContent=fmt(video.currentTime)+' / '+fmt(video.duration)});
+    video.addEventListener('loadedmetadata',()=>{$('videoTime').textContent='0:00 / '+fmt(video.duration)});
+    seek.addEventListener('input',()=>{if(video.duration)video.currentTime=Number(seek.value)/100*video.duration});$('rewind').addEventListener('click',()=>{if(hasVsl())video.currentTime=Math.max(0,video.currentTime-10)});
+    mute.addEventListener('click',()=>{if(!hasVsl())return;video.muted=!video.muted;mute.setAttribute('aria-label',video.muted?'Unmute':'Mute')});const speeds=[1,1.25,1.5,2,.75];$('speed').addEventListener('click',()=>{if(!hasVsl())return;let idx=speeds.indexOf(video.playbackRate);video.playbackRate=speeds[(idx+1)%speeds.length];$('speed').textContent=video.playbackRate+'×'});$('fullscreen').addEventListener('click',()=>{if(frame.requestFullscreen)frame.requestFullscreen()});
+    /* GHL booking transition. The GHL form is cross-origin: qualification must be configured in GHL. */
+    const formPane=$('formPane'),calendarPane=$('calendarPane'),rejectedPane=$('rejectedPane'),formStep=$('formStep'),calendarStep=$('calendarStep');
+    function state(name,updateUrl=true){formPane.hidden=name!=='form';calendarPane.hidden=name!=='calendar';rejectedPane.hidden=name!=='rejected';formStep.classList.toggle('active',name==='form');formStep.classList.toggle('done',name==='calendar');calendarStep.classList.toggle('active',name==='calendar');if(name==='calendar'){const cal=$('mytZluOzftOWFfYeiNcZ_1794378122729');if(!cal.src)cal.src=cal.dataset.src;setTimeout(()=>window.dispatchEvent(new Event('resize')),300)}if(updateUrl){history.replaceState({boostaState:name},'',location.pathname+location.search+'#consultation')}if(name!=='form')$('consultation').scrollIntoView({behavior:'smooth',block:'start'})}
+    window.BoostaSite={showCalendar:()=>state('calendar'),showRejection:()=>state('rejected'),showForm:()=>state('form')};
+    $('backToForm').addEventListener('click',()=>state('form'));$('retryForm').addEventListener('click',()=>state('form'));
+    // Only the server-confirmed qualification response may reveal the calendar.
+    /* Testimonial placeholders: replace these with real, approved reviews before launch. */
+    const placeholderTexts=[
+      'Approved client testimonial will appear here. Replace this card with a verified quote from a Boosta client.',
+      'A short, specific client quote works best here. Keep the wording exactly as approved by the client.',
+      'Add a real client outcome here once you have permission to publish the testimonial.',
+      'This space is reserved for client feedback about Boosta’s media, advertising, or AI services.',
+      'Use a concise review that explains the client’s experience and the work Boosta delivered.',
+      'Another verified client story can go here. Avoid adding unconfirmed revenue or performance claims.'
+    ];
+    const sampleNames=[
+      'Olivia Bennett','Daniel Foster','Sophia Carter','Marcus Reed','Emily Parker','James Wilson',
+      'Isabella Brooks','Noah Mitchell','Charlotte Hayes','Ethan Collins','Amelia Turner','Liam Roberts',
+      'Grace Morgan','Alexander Scott','Mia Harrison','Benjamin Clarke','Ava Richardson','Lucas Taylor'
+    ];
+    function card(index){const el=document.createElement('article');el.className='quote-card';el.innerHTML='<div><div class="quote-stars" aria-hidden="true">★★★★★</div><p class="quote-body"></p></div><div class="quote-bottom"><span class="quote-pill">SAMPLE TESTIMONIAL</span><div class="quote-author"></div><div class="quote-role">Client testimonial preview</div></div>';el.querySelector('.quote-body').textContent=placeholderTexts[index%placeholderTexts.length];el.querySelector('.quote-author').textContent=sampleNames[index%sampleNames.length];return el}
+    // Testimonial cards are pre-rendered in HTML so they remain visible even when scripts fail.
+    const zone=$('marqueeZone'),pauseBtn=$('pauseMarquee');pauseBtn.addEventListener('click',()=>{const paused=zone.classList.toggle('paused');pauseBtn.setAttribute('aria-pressed',String(paused));$('pauseIcon').textContent=paused?'▶':'Ⅱ';$('pauseLabel').textContent=paused?'Resume testimonial scrolling':'Pause testimonial scrolling'});
+    /* Testimonial video URLs: supply trusted Vimeo / YouTube embed URLs in each data-video-url attribute. */
+    const modal=$('videoModal'),modalMedia=$('modalMedia');document.querySelectorAll('.story-play').forEach(btn=>btn.addEventListener('click',()=>{const url=btn.dataset.videoUrl;if(!url){notify('This client video will be added soon.');return}try{const u=new URL(url);if(u.protocol!=='https:'||!['player.vimeo.com','www.youtube.com','www.youtube-nocookie.com'].includes(u.hostname))throw Error('Unsupported host');const iframe=document.createElement('iframe');iframe.src=u.href;iframe.allow='autoplay;fullscreen;picture-in-picture';iframe.allowFullscreen=true;iframe.title='Client testimonial';modalMedia.replaceChildren(iframe);modal.hidden=false;document.body.style.overflow='hidden';$('closeModal').focus()}catch(e){notify('Add a supported Vimeo or YouTube embed URL.')}}));
+    function closeModal(){modal.hidden=true;modalMedia.replaceChildren();document.body.style.overflow=''}$('closeModal').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeModal()});document.querySelectorAll('[data-pending]').forEach(btn=>btn.addEventListener('click',()=>notify(btn.dataset.pending+' page needs to be linked before launch.')));
+  })();
+  </script>
+  <script>
+  /* Motion only. The GHL form, calendar, VSL controls and qualification bridge remain untouched. */
+  (function(){'use strict';
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const isMobile=window.matchMedia('(max-width: 760px)').matches;
+    if(reduced.matches||!window.gsap||!window.ScrollTrigger){
+      document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('visible'));
+      return;
+    }
+    const gsap=window.gsap, ST=window.ScrollTrigger;
+    gsap.registerPlugin(ST);
+    let lenis=null;
+    // Desktop smooth scroll; native touch scrolling is more reliable inside embedded GHL forms.
+    if(window.Lenis && window.matchMedia('(min-width: 761px) and (pointer: fine)').matches){
+      try{
+        lenis=new window.Lenis({duration:1.15,smoothWheel:true,wheelMultiplier:.85,
+          easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
+        lenis.on('scroll',ST.update);
+        gsap.ticker.add(t=>lenis.raf(t*1000));
+        gsap.ticker.lagSmoothing(0);
+      }catch(err){lenis=null}
+    }
+    // Smooth anchor navigation also works with the native-scroll fallback.
+    document.querySelectorAll('a[href^="#"]').forEach(link=>{
+      link.addEventListener('click',event=>{
+        const id=link.getAttribute('href');
+        if(!id||id==='#')return;
+        const target=document.querySelector(id);
+        if(!target)return;
+        event.preventDefault();
+        if(lenis)lenis.scrollTo(target,{offset:-95,duration:1.25});
+        else target.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+    // Avoid splitting the gradient headline: it keeps its exact original gradient rendering.
+    // Split plain text nodes into clipped words and individually animated characters.
+    function splitText(el,mode){
+      const accessible=(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim();
+      if(accessible)el.setAttribute('aria-label',accessible);
+      const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{
+        acceptNode(node){
+          if(!node.nodeValue.trim()||node.parentElement.closest('.gradient-text,.motion-word,script,style'))return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+      nodes.forEach(node=>{
+        const fragment=document.createDocumentFragment();
+        (node.nodeValue.match(/\s+|\S+/g)||[]).forEach(token=>{
+          if(/^\s+$/.test(token)){fragment.appendChild(document.createTextNode(token));return}
+          const word=document.createElement('span');word.className='motion-word';word.setAttribute('aria-hidden','true');
+          if(mode==='chars'){
+            Array.from(token).forEach(ch=>{const span=document.createElement('span');span.className='motion-char';span.textContent=ch;word.appendChild(span)});
+          }else{word.textContent=token}
+          fragment.appendChild(word);
+        });
+        node.replaceWith(fragment);
+      });
+      // Mark unsplit descendants as hidden from screen readers because aria-label carries the complete text.
+      Array.from(el.children).forEach(child=>child.setAttribute('aria-hidden','true'));
+    }
+    function animateFrom(el,from,to,triggerOpts){
+      gsap.fromTo(el,from,Object.assign({duration:1.05,ease:'power3.out',overwrite:'auto'},to,
+        triggerOpts?{scrollTrigger:triggerOpts}:{}));
+    }
+    function init(){
+      if(document.documentElement.classList.contains('motion-ready'))return;
+      document.querySelectorAll('.hero h1,.section h2').forEach(el=>splitText(el,'chars'));
+      document.querySelectorAll('.hero .lead,.section-intro').forEach(el=>splitText(el,'words'));
+      document.documentElement.classList.add('motion-ready');
+      const hero=gsap.timeline({defaults:{ease:'power3.out'}});
+      if(!isMobile)hero.fromTo('.site-nav',{autoAlpha:0,y:-18},{autoAlpha:1,y:0,duration:.85});
+      hero.fromTo('.hero .eyebrow',{autoAlpha:0,y:18},{autoAlpha:1,y:0,duration:.6},'-=.38')
+        .fromTo('.hero h1 .motion-char',{autoAlpha:0,yPercent:120,rotateX:-16},
+          {autoAlpha:1,yPercent:0,rotateX:0,duration:.92,stagger:.024},'-=.26')
+        .fromTo('.hero h1 .gradient-text',{autoAlpha:0,filter:'blur(6px)'},
+          {autoAlpha:1,filter:'blur(0px)',duration:1.12},'-=.65')
+        .fromTo('.hero .lead .motion-word',{autoAlpha:0,y:15},
+          {autoAlpha:1,y:0,duration:.65,stagger:.017},'-=.75')
+        .fromTo('.vsl-wrap',{autoAlpha:0,y:68,scale:.955,clipPath:'inset(8% 4% 8% 4% round 16px)'},
+          {autoAlpha:1,y:0,scale:1,clipPath:'inset(0% 0% 0% 0% round 0px)',duration:1.25},'-=.65');
+      // Character-staggered section titles and word-by-word supporting copy.
+      document.querySelectorAll('.section h2').forEach(title=>{
+        animateFrom(title.querySelectorAll('.motion-char'),
+          {autoAlpha:0,yPercent:115,rotateX:-12},
+          {autoAlpha:1,yPercent:0,rotateX:0,stagger:.014,duration:.98},
+          {trigger:title,start:'top 88%',once:true});
+      });
+      document.querySelectorAll('.section-intro').forEach(p=>{
+        animateFrom(p.querySelectorAll('.motion-word'),{autoAlpha:0,y:20},
+          {autoAlpha:1,y:0,stagger:.025,duration:.75},
+          {trigger:p,start:'top 89%',once:true});
+      });
+      document.querySelectorAll('.section-kicker').forEach(kicker=>{
+        animateFrom(kicker,{autoAlpha:0,y:20,filter:'blur(3px)'},
+          {autoAlpha:1,y:0,filter:'blur(0px)',duration:.75},
+          {trigger:kicker,start:'top 93%',once:true});
+      });
+      // Stagger video story cards, followed by a subtle scrubbed movement of the media artwork.
+      if(!isMobile)gsap.set('.story-card',{autoAlpha:0,y:85,scale:.94,rotateX:5});
+      ST.batch('.story-card',{
+        start:'top 93%',once:true,interval:.13,batchMax:4,
+        onEnter:batch=>gsap.to(batch,
+          {autoAlpha:1,y:0,scale:1,rotateX:0,duration:1.12,stagger:.15,ease:'power3.out'})
+      });
+      if(isMobile){
+        document.querySelectorAll('.story-card').forEach(card=>{
+          gsap.fromTo(card,{y:28},{y:0,duration:.75,ease:'power2.out',
+            scrollTrigger:{trigger:card,start:'top 94%',once:true}});
+        });
+      }
+      document.querySelectorAll('.story-media').forEach(media=>{
+        gsap.fromTo(media,{clipPath:'inset(5% 3% 5% 3% round 13px)'},
+          {clipPath:'inset(0% 0% 0% 0% round 13px)',ease:'none',scrollTrigger:{trigger:media,start:'top 95%',end:'top 45%',scrub:1}});
+      });
+      animateFrom('.metrics',{autoAlpha:0,y:50,scale:.94},
+        {autoAlpha:1,y:0,scale:1,duration:1.0},
+        {trigger:'.metrics',start:'top 91%',once:true});
+      gsap.fromTo('.marquee-zone',{y:Math.min(24,isMobile?16:24)},
+        {y:0,duration:.8,ease:'power2.out',scrollTrigger:{trigger:'.marquee-zone',start:'top 94%',once:true}});
+      animateFrom('.final-cta',{autoAlpha:0,y:55},
+        {autoAlpha:1,y:0,duration:1.1},
+        {trigger:'.final-cta',start:'top 92%',once:true});
+      // Gentle parallax behind the VSL. Never animate GHL iframe contents.
+      gsap.to('.vsl-poster .poster-content',{yPercent:-9,ease:'none',scrollTrigger:{trigger:'.vsl-wrap',start:'top bottom',end:'bottom top',scrub:1.3}});
+      gsap.to('.gradient-text',{backgroundPosition:'100% 50%',ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:1.4}});
+      gsap.to('#motionProgress',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.2}});
+      // Magnetic movement is confined to a child span so button hover transforms remain intact.
+      document.querySelectorAll('.primary-btn,.nav-cta').forEach(button=>{
+        const inner=document.createElement('span');inner.className='motion-cta-inner';
+        while(button.firstChild)inner.appendChild(button.firstChild);
+        button.appendChild(inner);
+        button.addEventListener('pointermove',event=>{
+          if(event.pointerType!=='mouse')return;
+          const rect=button.getBoundingClientRect();
+          const x=(event.clientX-rect.left-rect.width/2)/rect.width*10;
+          const y=(event.clientY-rect.top-rect.height/2)/rect.height*8;
+          gsap.to(inner,{x,y,duration:.42,ease:'power3.out',overwrite:true});
+        });
+        button.addEventListener('pointerleave',()=>gsap.to(inner,{x:0,y:0,duration:.55,ease:'elastic.out(1,.55)',overwrite:true}));
+      });
+      // Recalculate after iframe resizing and responsive layout changes.
+      let raf=0;
+      window.addEventListener('resize',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>ST.refresh())},{passive:true});
+      // The GHL embed can grow when qualification questions expand. Refresh scroll triggers on resize.
+      if(window.ResizeObserver){
+        const bookingObserver=new ResizeObserver(()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>ST.refresh())});
+        const booking=document.querySelector('.booking-shell');
+        if(booking)bookingObserver.observe(booking);
+      }
+      ST.refresh();
+    }
+    if(document.fonts&&document.fonts.ready){
+      Promise.race([document.fonts.ready,new Promise(resolve=>setTimeout(resolve,1300))]).then(init).catch(init);
+    }else init();
+  })();
+  </script>
+<script>
+(function(){
+  'use strict';
+  function init(){
+    var root=document.getElementById('boosta-qualification');
+    if(!root || root.dataset.initialized==='1')return;
+    root.dataset.initialized='1';
+    var CONFIG={
+      // Same-origin on Vercel. For a GHL-hosted page set window.BOOSTA_LEAD_API_URL
+      // to the deployed absolute URL BEFORE this script runs.
+      submissionEndpoint:window.BOOSTA_LEAD_API_URL || '/api/lead'
+    };
+    var $=function(id){return document.getElementById(id);};
+    var form=$('boosta-lead-form'),questions=$('boosta-questions'),expand=$('boosta-expand'),error=$('boosta-error'),contactError=$('boosta-contact-error');
+    // Select from country names and their country calling codes. Multiple territories can share a calling code.
+    var countries=[
+      ['PK','Pakistan','+92'],['US','United States','+1'],['GB','United Kingdom','+44'],['AE','United Arab Emirates','+971'],['SA','Saudi Arabia','+966'],['CA','Canada','+1'],['AU','Australia','+61'],['IN','India','+91'],['DE','Germany','+49'],['FR','France','+33'],['IT','Italy','+39'],['ES','Spain','+34'],['NL','Netherlands','+31'],['BE','Belgium','+32'],['CH','Switzerland','+41'],['AT','Austria','+43'],['SE','Sweden','+46'],['NO','Norway','+47'],['DK','Denmark','+45'],['FI','Finland','+358'],['IE','Ireland','+353'],['PT','Portugal','+351'],['PL','Poland','+48'],['CZ','Czechia','+420'],['GR','Greece','+30'],['TR','Türkiye','+90'],['RO','Romania','+40'],['HU','Hungary','+36'],['UA','Ukraine','+380'],['RU','Russia','+7'],['NZ','New Zealand','+64'],['SG','Singapore','+65'],['MY','Malaysia','+60'],['ID','Indonesia','+62'],['PH','Philippines','+63'],['TH','Thailand','+66'],['VN','Vietnam','+84'],['CN','China','+86'],['JP','Japan','+81'],['KR','South Korea','+82'],['HK','Hong Kong','+852'],['TW','Taiwan','+886'],['BD','Bangladesh','+880'],['LK','Sri Lanka','+94'],['NP','Nepal','+977'],['AF','Afghanistan','+93'],['IR','Iran','+98'],['IQ','Iraq','+964'],['QA','Qatar','+974'],['KW','Kuwait','+965'],['BH','Bahrain','+973'],['OM','Oman','+968'],['JO','Jordan','+962'],['LB','Lebanon','+961'],['IL','Israel','+972'],['EG','Egypt','+20'],['ZA','South Africa','+27'],['NG','Nigeria','+234'],['KE','Kenya','+254'],['GH','Ghana','+233'],['MA','Morocco','+212'],['TN','Tunisia','+216'],['UG','Uganda','+256'],['TZ','Tanzania','+255'],['ET','Ethiopia','+251'],['BR','Brazil','+55'],['MX','Mexico','+52'],['AR','Argentina','+54'],['CL','Chile','+56'],['CO','Colombia','+57'],['PE','Peru','+51'],['VE','Venezuela','+58'],['EC','Ecuador','+593'],['UY','Uruguay','+598'],['CR','Costa Rica','+506'],['PA','Panama','+507'],['DO','Dominican Republic','+1'],['JM','Jamaica','+1'],['IS','Iceland','+354'],['LU','Luxembourg','+352'],['MT','Malta','+356'],['CY','Cyprus','+357'],['HR','Croatia','+385'],['RS','Serbia','+381'],['BG','Bulgaria','+359'],['SK','Slovakia','+421'],['SI','Slovenia','+386'],['LT','Lithuania','+370'],['LV','Latvia','+371'],['EE','Estonia','+372'],['GE','Georgia','+995'],['AZ','Azerbaijan','+994'],['KZ','Kazakhstan','+7'],['UZ','Uzbekistan','+998']
+    ];
+    var select=$('boosta-country');
+    countries.sort(function(a,b){return a[1].localeCompare(b[1]);});
+    countries.forEach(function(c){var o=document.createElement('option');o.value=c[0];o.textContent=c[1]+' ('+c[2]+')';o.dataset.dial=c[2];select.appendChild(o);});
+    select.value='PK';
+    var sets={
+      'boosta-revenue-options':{name:'revenue',options:[['0','$0/month'],['1000','$1K–$2K/month'],['2000','$2K–$5K/month'],['5000','$5K–$10K/month'],['10000','$10K–$20K/month'],['20000','$20K–$50K/month'],['50000','$50K+/month']]},
+      'boosta-budget-options':{name:'budget',options:[['0','Less than $1K'],['1000','$1K–$3K'],['3000','$3K–$7K'],['7000','$7K–$15K'],['15000','$15K+']]},
+      'boosta-attendance-options':{name:'attendance',options:[['yes','Yes, I will attend the consultation'],['no','No, I cannot attend the consultation']]}
+    };
+    Object.keys(sets).forEach(function(id){
+      var section=sets[id];section.options.forEach(function(opt,i){
+        var label=document.createElement('label');
+        label.style.cssText='display:flex;align-items:center;gap:11px;box-sizing:border-box;min-height:40px;padding:10px 12px;background:#fff;color:#252939;font-size:13px;cursor:pointer;'+(i?'border-top:1px solid #d8dce6;':'');
+        var input=document.createElement('input');input.type='radio';input.name=section.name;input.value=opt[0];input.required=true;
+        input.style.cssText='width:16px;height:16px;margin:0;accent-color:#6038dc;flex-shrink:0';
+        label.appendChild(input);label.appendChild(document.createTextNode(opt[1]));$(id).appendChild(label);
+      });
+    });
+    function contactValid(){
+      if(!$('boosta-name').value.trim()){contactError.textContent='Please enter your full name.';contactError.style.display='block';$('boosta-name').focus();return false;}
+      if(!$('boosta-email').validity.valid||!$('boosta-email').value.trim()){contactError.textContent='Please enter a valid email address.';contactError.style.display='block';$('boosta-email').focus();return false;}
+      contactError.style.display='none';return true;
+    }
+    expand.addEventListener('click',function(){if(!contactValid())return;questions.hidden=false;questions.style.display='block';expand.style.display='none';questions.scrollIntoView({behavior:'smooth',block:'nearest'});});
+    function checked(name){var el=form.querySelector('input[name="'+name+'"]:checked');return el?el.value:null;}
+    function showError(message){error.textContent=message;error.style.display='block';error.scrollIntoView({behavior:'smooth',block:'nearest'});}
+    function showForm(){root.hidden=false;root.style.display='block';form.style.display='block';$('boosta-rejected').style.display='none';$('boosta-qualified-pending').style.display='none';root.scrollIntoView({behavior:'smooth',block:'start'});}
+    $('boosta-retry').addEventListener('click',showForm);
+    $('boosta-qualified-back').addEventListener('click',showForm);
+    window.addEventListener('boosta:back-to-form',showForm);
+    form.addEventListener('submit',async function(ev){
+      ev.preventDefault();error.style.display='none';
+      if(!contactValid())return;
+      if(questions.style.display==='none'){expand.click();return;}
+      var raw=$('boosta-phone').value.replace(/[^\d]/g,'');
+      var code=select.options[select.selectedIndex].dataset.dial;
+      // Drop common national trunk prefix for international E.164 formatting.
+      if(raw.charAt(0)==='0' && code!=='+1')raw=raw.substring(1);
+      var full=code+raw;
+      if(raw.length<6||raw.length>14||full.replace(/\D/g,'').length>15){$('boosta-phone').focus();showError('Enter a valid phone number for the selected country.');return;}
+      var revenue=checked('revenue'),budget=checked('budget'),attendance=checked('attendance');
+      if(revenue===null||budget===null||attendance===null){showError('Please answer all required questions before continuing.');return;}
+      var lead={name:$('boosta-name').value.trim(),email:$('boosta-email').value.trim(),country:select.value,phone:full,revenue:revenue,budget:budget,attendance:attendance,source:'Boosta qualification form'};
+      // Qualification is evaluated on the server, not trusted from the browser.
+       lead.website=$('boosta-hp').value;
+      var submit=$('boosta-submit');submit.disabled=true;submit.textContent='Checking eligibility…';
+      try{
+        const response=await fetch(CONFIG.submissionEndpoint,{
+          method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(lead)
+        });
+        const result=await response.json().catch(function(){return {};});
+        if(!response.ok || result.saved!==true || !result.contactId){
+          throw new Error(result.error || 'GHL contact save could not be confirmed');
+        }
+        // Only advance after HighLevel confirms the contact is saved.
+        if(!result.qualified){
+          if(window.BoostaSite && typeof window.BoostaSite.showRejection==='function'){
+            window.BoostaSite.showRejection();
+          }else{
+            form.style.display='none';$('boosta-rejected').hidden=false;
+            $('boosta-rejected').style.display='block';
+            root.scrollIntoView({behavior:'smooth',block:'start'});
+          }
+          return;
+        }
+        if(window.BoostaSite && typeof window.BoostaSite.showCalendar==='function'){
+          window.BoostaSite.showCalendar();return;
+        }
+        if(window.BoostaCalendar && typeof window.BoostaCalendar.show==='function'){
+          if(window.BoostaCalendar.show(lead))return;
+        }
+        form.style.display='none';$('boosta-qualified-pending').hidden=false;
+        $('boosta-qualified-pending').style.display='block';
+        root.scrollIntoView({behavior:'smooth',block:'start'});
+      }catch(err){console.error('Boosta qualification:',err);showError('Your details could not be saved right now. Please try again.');}
+      finally{submit.disabled=false;submit.textContent='Continue';}
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+
+</body>
+</html>
