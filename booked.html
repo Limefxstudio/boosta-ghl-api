@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Your Boosta consultation is booked. Here's what happens next and how to prepare for your call.">
+  <title>You're Booked | Boosta</title>
+  <link rel="icon" type="image/png" href="assets/boosta-logo.png">
+  <link rel="apple-touch-icon" href="assets/boosta-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101018;--muted:#6f7180;--blue:#2465ec;--purple:#6545d9;--line:#e5e5ed;--wine:#71364f;--wine-dark:#321b2a;--page:780px;--ease:cubic-bezier(.22,1,.36,1)}
+    *{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}button,a{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #8ca7ff;outline-offset:3px}::selection{background:#e7e0ff;color:#201d35}
+    .progress{position:fixed;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,#2465ec,#6545d9,#9a83ee);transform:scaleX(0);transform-origin:left;z-index:120;pointer-events:none}
+    .shell{width:min(calc(100% - 36px),var(--page));margin-inline:auto}.intro{text-align:center;padding-top:20px}.top-capsule{height:51px;width:min(560px,100%);border:1px solid #e9e8ed;border-radius:100px;margin:0 auto 26px;display:flex;align-items:center;justify-content:flex-start;padding:8px 11px;background:#fff}.top-brand{display:inline-grid;place-items:center;width:31px;height:31px;background:linear-gradient(135deg,#2d6bfa,#6545d9);border-radius:8px;color:#fff;box-shadow:0 3px 10px #6545d925}.top-brand img{width:31px;height:31px;object-fit:contain;display:block;border-radius:8px}
+    h1,h2,h3,p{margin-top:0}.intro h1{font-size:clamp(36px,4.5vw,45px);line-height:1.14;letter-spacing:-.067em;font-weight:750;margin:0 0 12px}.intro-copy{font-size:13px;line-height:1.7;color:#33333d;margin:0 auto;max-width:740px}.detail-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:19px}.detail-pill{min-width:130px;padding:9px 14px 10px;border:1px solid #e3e3e7;border-radius:12px;background:#fcfcfd;display:flex;flex-direction:column;gap:4px}.detail-pill span{font-size:9px;color:#868793;letter-spacing:.06em;text-transform:uppercase;font-weight:600}.detail-pill strong{font-size:11px;line-height:1.25;letter-spacing:-.015em;font-weight:750}
+    .precall{padding-top:52px;text-align:center}.section-heading{font-size:clamp(29px,3.3vw,36px);font-weight:750;letter-spacing:-.06em;line-height:1.16;margin:0 0 8px}.section-subtitle{font-size:12px;line-height:1.65;color:#92909b;margin:0 auto 23px;max-width:660px}
+    .hero-media{position:relative;aspect-ratio:16/9;width:100%;border-radius:14px;overflow:hidden;background:#12132c;isolation:isolate;box-shadow:0 3px 9px #16122e12}.hero-media video,.hero-media iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;display:block;z-index:2}.hero-media .placeholder{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(ellipse at 30% 30%,#3b55c9a0,transparent 43%),radial-gradient(ellipse at 76% 80%,#6d43b9b8,transparent 50%),linear-gradient(130deg,#0e193c,#171127 78%);color:#fff;z-index:1}.hero-media .placeholder::before{content:"";position:absolute;width:42%;aspect-ratio:1;border:1px solid #ffffff2e;border-radius:50%;box-shadow:0 0 0 60px #ffffff07,0 0 0 120px #ffffff05}.placeholder-inner{position:relative;z-index:1;text-align:center;padding:20px}.placeholder-kicker{font-size:12px;font-weight:700;letter-spacing:.25em;color:#bdb2ff;margin-bottom:14px}.placeholder-title{font-size:clamp(27px,5vw,49px);font-weight:750;letter-spacing:-.065em;line-height:1.1}.placeholder-caption{font-size:12px;color:#c8c6e6;margin-top:15px}.media-unmute{position:absolute;inset:0;z-index:5;border:0;background:transparent;display:flex;align-items:center;justify-content:center;color:#fff;transition:opacity .35s}.unmute-panel{width:min(380px,65%);min-height:170px;border-radius:21px;background:rgba(105,44,79,.73);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;box-shadow:0 10px 38px #0002;transition:transform .5s var(--ease),background .3s}.media-unmute:hover .unmute-panel{transform:scale(1.04);background:rgba(99,43,94,.84)}.unmute-icon{width:42px;height:42px;display:grid;place-items:center}.unmute-icon svg{width:37px;height:37px;fill:#fff}.unmute-text{font-size:clamp(15px,2.5vw,24px);line-height:1.3;font-weight:750;letter-spacing:-.035em}.media-unmute.is-unmuted{opacity:0;pointer-events:none}.media-sound-toggle{position:absolute;right:15px;bottom:15px;z-index:7;border:1px solid #ffffff60;border-radius:100px;background:#18152b9e;color:#fff;font-size:11px;padding:9px 13px;display:none}.hero-media.has-media .media-sound-toggle{display:block}.hero-media.has-media .placeholder{display:none}.hero-media:not(.has-media) .media-unmute{display:none}.hero-media:not(.has-media) .media-sound-toggle{display:none}.placeholder-play{margin:18px auto 0;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#6545d9;box-shadow:0 9px 30px #0004}.placeholder-play svg{width:22px;height:22px;fill:white;margin-left:3px}
+    .important{margin-top:77px;padding:28px 28px 27px;border:1px solid #ffb2c5;background:#fff7f8;border-radius:13px;color:#171019}.important h3{font-size:20px;font-weight:750;letter-spacing:-.035em;color:#8c3154;margin:0 0 14px}.important p{font-size:13px;line-height:1.68;margin:0 0 14px}.important p:last-child{margin-bottom:0}.important strong{font-weight:750}
+    .next{padding-top:76px;text-align:center}.next .section-subtitle{max-width:580px;margin-bottom:26px}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 26px;text-align:left}.video-card{min-width:0;border:1px solid #e5e5e9;border-radius:13px;background:#fff;box-shadow:0 2px 3px #0000000c;overflow:hidden;transition:transform .55s var(--ease),box-shadow .45s,border-color .45s;will-change:transform}.video-card:hover{transform:translateY(-7px);box-shadow:0 16px 35px #241a451a;border-color:#d5cbf4}.video-thumb{aspect-ratio:16/9;width:100%;border:0;display:block;position:relative;overflow:hidden;background:#1a2346;color:#fff;padding:0}.video-thumb .art{position:absolute;inset:0;background:radial-gradient(ellipse at 40% 24%,#526cc7aa,transparent 40%),radial-gradient(ellipse at 80% 80%,#7555d9bb,transparent 45%),linear-gradient(135deg,#17223f,#282042)}.video-card:nth-child(2) .art{background:radial-gradient(ellipse at 80% 15%,#5696e58a,transparent 45%),radial-gradient(ellipse at 30% 90%,#7350b5a6,transparent 50%),linear-gradient(130deg,#0b2440,#2c2353)}.video-card:nth-child(3) .art{background:radial-gradient(ellipse at 25% 65%,#9e64d4a8,transparent 45%),radial-gradient(ellipse at 85% 20%,#3053b4c0,transparent 50%),linear-gradient(140deg,#1b1c3c,#342446)}.video-card:nth-child(4) .art{background:radial-gradient(ellipse at 20% 20%,#5261c4ab,transparent 40%),radial-gradient(ellipse at 75% 75%,#b274ce77,transparent 50%),linear-gradient(140deg,#1b2341,#292048)}.video-thumb .art::before{content:"";position:absolute;inset:12% 25%;border:1px solid #ffffff24;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 0 36px #ffffff06,0 0 0 73px #ffffff05}.thumb-kicker{position:absolute;top:18px;left:18px;font-size:10px;letter-spacing:.19em;font-weight:700;color:#ffffffb8}.thumb-number{position:absolute;bottom:14px;left:18px;font-size:30px;font-weight:750;letter-spacing:-.07em;color:#ffffffd6}.play-disc{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#71364f;color:#fff;box-shadow:0 8px 24px #0003;transition:transform .4s var(--ease),background .3s}.play-disc svg{width:21px;height:21px;fill:#fff;margin-left:3px}.video-thumb:hover .play-disc{transform:translate(-50%,-50%) scale(1.15);background:#6545d9}.video-card h3{font-size:15px;letter-spacing:-.025em;font-weight:750;line-height:1.4;margin:0;padding:17px 18px 19px}
+    .footer{margin-top:77px;background:#1c111a;color:#fff;padding:39px 0 43px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}.footer-brand{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:750;letter-spacing:-.045em}.footer-brand img{width:31px;height:31px;object-fit:contain;display:block}.footer-links{display:flex;gap:25px}.footer-links a{font-size:11px;color:#c8aebb;text-decoration:none}.footer-links a:hover{color:#fff}
+    .modal{position:fixed;inset:0;z-index:200;background:#080815e8;display:grid;place-items:center;padding:25px;backdrop-filter:blur(12px)}.modal[hidden]{display:none}.modal-content{position:relative;width:min(920px,100%)}.modal-close{position:absolute;right:0;top:-49px;border:0;background:#fff;border-radius:50%;width:37px;height:37px;font-size:24px;color:#171525}.modal-frame{width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#101018}.modal-frame iframe,.modal-frame video{display:block;width:100%;height:100%;object-fit:contain;border:0}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,18px);background:#19172b;color:#fff;padding:13px 18px;border-radius:10px;z-index:300;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;font-size:12px;box-shadow:0 12px 40px #0003;max-width:min(90vw,460px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+    .split-word{display:inline-block;white-space:nowrap;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}.split-word>span{display:inline-block;will-change:transform}.split-char{display:inline-block;will-change:transform,opacity}.intro h1,.section-heading{perspective:900px}
+    @media(max-width:700px){.intro{padding-top:13px}.top-capsule{margin-bottom:24px}.intro h1{font-size:clamp(31px,7vw,42px)}.intro-copy{font-size:12px}.precall{padding-top:44px}.section-heading{font-size:clamp(26px,6vw,34px)}.important{margin-top:56px;padding:24px 22px}.next{padding-top:62px}.video-grid{gap:16px}.footer{margin-top:66px}}
+    @media(max-width:520px){.shell{width:min(calc(100% - 28px),var(--page))}.top-capsule{height:47px}.intro h1{font-size:clamp(30px,8.5vw,38px)}.detail-pills{gap:7px}.detail-pill{flex:1 1 29%;min-width:90px;padding:10px 7px}.detail-pill strong{font-size:10px}.detail-pill span{font-size:8px}.precall{padding-top:44px}.section-heading{font-size:29px}.section-subtitle{font-size:12px}.hero-media{border-radius:10px}.unmute-panel{min-height:90px;border-radius:12px;gap:4px}.unmute-icon{width:26px;height:26px}.unmute-icon svg{width:25px;height:25px}.unmute-text{font-size:14px}.important{padding:21px 18px;margin-top:48px}.important h3{font-size:18px}.important p{font-size:12px}.next{padding-top:55px}.video-grid{grid-template-columns:1fr;gap:16px}.video-card h3{font-size:14px}.footer-inner{flex-direction:column;align-items:flex-start;gap:22px}.footer-links{gap:19px}.footer{padding:32px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.progress{display:none}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="scrollProgress" aria-hidden="true"></div>
+  <main>
+    <header class="intro shell">
+      <div class="top-capsule" data-intro="cap"><span class="top-brand" aria-label="Boosta"><img src="assets/boosta-logo.png" alt="Boosta logo"></span></div>
+      <h1 data-split="chars">You're Booked. Here's What Happens Next.</h1>
+      <p class="intro-copy" data-intro="copy">Your consultation is booked. Check your email for the appointment details and any confirmation instructions from our team.</p>
+      <div class="detail-pills" data-intro="pills"><div class="detail-pill"><span>Next step</span><strong>Check Your Email</strong></div><div class="detail-pill"><span>Format</span><strong>1-on-1 Intake Call</strong></div><div class="detail-pill"><span>Preparation</span><strong>Watch The Video</strong></div></div>
+    </header>
+
+    <section class="precall shell" aria-labelledby="precallHeading">
+      <h2 class="section-heading" id="precallHeading" data-split="words">Watch This Before Your Call</h2>
+      <p class="section-subtitle" data-fade>This quick video will prepare you for the intake call and help you get the most out of it.</p>
+      <div class="hero-media" id="heroMedia" data-scale>
+        <div class="placeholder" id="heroPlaceholder"><div class="placeholder-inner"><div class="placeholder-kicker">BOOSTA / PRE-CALL</div><div class="placeholder-title">Your Next Step<br>Starts Here.</div><div class="placeholder-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3 21 12 6 21z"/></svg></div><div class="placeholder-caption">Add your pre-call video URL to activate autoplay</div></div></div>
+        <video id="precallVideo" muted autoplay playsinline loop preload="metadata" hidden aria-label="Boosta pre-call preparation video"></video>
+        <div id="vimeoMount" hidden></div>
+        <button class="media-unmute" id="heroUnmute" type="button" aria-label="Unmute the pre-call video"><span class="unmute-panel"><span class="unmute-icon"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 0 0 6m3-9a9 9 0 0 0 0 12"/></svg></span><span class="unmute-text">Your Video Is Playing<br>Click To Unmute</span></span></button>
+        <button class="media-sound-toggle" id="soundToggle" type="button">Unmute</button>
+      </div>
+    </section>
+
+    <section class="important shell" aria-labelledby="importantHeading" data-reveal="notice">
+      <h3 id="importantHeading">IMPORTANT: Please Confirm Your Spot</h3>
+      <p>Your consultation has been scheduled. <strong>Keep an eye on your email and phone</strong> for any additional confirmation or meeting instructions from our team.</p>
+      <p><strong>If we contact you to confirm your appointment, please reply as soon as you can.</strong> This helps us prepare for your call and keep your scheduled time reserved.</p>
+      <p>Come ready to share your current challenges, your goals, and what you've tried so far. We'll use that information to make the conversation as useful as possible.</p>
+    </section>
+
+    <section class="next shell" aria-labelledby="nextHeading">
+      <h2 class="section-heading" id="nextHeading" data-split="words">While You Wait: Watch These Next</h2>
+      <p class="section-subtitle" data-fade>These short videos will give you a deeper look at how Boosta works and what's possible for your business.</p>
+      <div class="video-grid">
+        <article class="video-card" data-card><button class="video-thumb" type="button" data-video="0" aria-label="Play What Results You Can Expect"><span class="art"></span><span class="thumb-kicker">BOOSTA / INSIGHTS</span><span class="thumb-number">01</span><span class="play-disc"><svg viewBox="0 0 24 24"><path d="M6 3 21 12 6 21z"/></svg></span></button><h3>What Results You Can Expect</h3></article>
+        <article class="video-card" data-card><button class="video-thumb" type="button" data-video="1" aria-label="Play Who Is This Program For"><span class="art"></span><span class="thumb-kicker">BOOSTA / INSIGHTS</span><span class="thumb-number">02</span><span class="play-disc"><svg viewBox="0 0 24 24"><path d="M6 3 21 12 6 21z"/></svg></span></button><h3>Who Is This Program For?</h3></article>
+        <article class="video-card" data-card><button class="video-thumb" type="button" data-video="2" aria-label="Play How We Can Help You"><span class="art"></span><span class="thumb-kicker">BOOSTA / INSIGHTS</span><span class="thumb-number">03</span><span class="play-disc"><svg viewBox="0 0 24 24"><path d="M6 3 21 12 6 21z"/></svg></span></button><h3>How We Can Help You?</h3></article>
+        <article class="video-card" data-card><button class="video-thumb" type="button" data-video="3" aria-label="Play The Systems We Implement"><span class="art"></span><span class="thumb-kicker">BOOSTA / INSIGHTS</span><span class="thumb-number">04</span><span class="play-disc"><svg viewBox="0 0 24 24"><path d="M6 3 21 12 6 21z"/></svg></span></button><h3>The Systems We Implement</h3></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><div class="footer-brand"><img src="assets/boosta-logo.png" alt="Boosta logo"><span>boosta<span style="color:#9477ff">.</span></span></div><div class="footer-links"><a href="#" id="termsLink">Terms of Service</a><a href="#" id="privacyLink">Privacy Policy</a></div></div></footer>
+  <div class="modal" id="videoModal" hidden role="dialog" aria-modal="true" aria-label="Boosta video"><div class="modal-content"><button class="modal-close" id="modalClose" type="button" aria-label="Close video">×</button><div class="modal-frame" id="modalFrame"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script>
+    /* ===== EDIT YOUR MEDIA LINKS HERE =====
+       Direct .mp4/.webm files work. Vimeo links like https://vimeo.com/123456789 also work.
+       Empty strings retain the branded placeholder. Never add GHL API secrets to this page. */
+    const MEDIA = {
+      hero: '',
+      next: ['', '', '', ''],
+      privacy: '',
+      terms: ''
+    };
+
+    (() => {
+      'use strict';
+      const $ = id => document.getElementById(id);
+      const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let toastTimer, heroPlayer = null, heroMode = null, heroMuted = true, lastFocus = null;
+      function toast(msg){ const el=$('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3300); }
+      function vimeoId(url){ const m=String(url).match(/(?:vimeo\.com\/(?:video\/)?|player\.vimeo\.com\/video\/)(\d+)/); return m ? m[1] : null; }
+      function vimeoEmbed(id, options=''){return 'https://player.vimeo.com/video/'+encodeURIComponent(id)+'?title=0&byline=0&portrait=0'+options;}
+      function loadVimeoSDK(){return new Promise((resolve,reject)=>{if(window.Vimeo?.Player){resolve(window.Vimeo);return;}const s=document.createElement('script');s.src='https://player.vimeo.com/api/player.js';s.onload=()=>window.Vimeo?.Player?resolve(window.Vimeo):reject(new Error('Vimeo SDK unavailable'));s.onerror=reject;document.head.appendChild(s);});}
+      async function initHero(){
+        const url=MEDIA.hero.trim(); if(!url)return;
+        const wrap=$('heroMedia'), native=$('precallVideo'), id=vimeoId(url);
+        wrap.classList.add('has-media');
+        if(id){
+          heroMode='vimeo';const mount=$('vimeoMount');mount.hidden=false;
+          const iframe=document.createElement('iframe');iframe.title='Boosta pre-call video';iframe.allow='autoplay; fullscreen; picture-in-picture';iframe.src=vimeoEmbed(id,'&autoplay=1&muted=1&loop=1&background=1');mount.appendChild(iframe);
+          try{const Vimeo=await loadVimeoSDK();heroPlayer=new Vimeo.Player(iframe);await heroPlayer.ready();await heroPlayer.setMuted(true);await heroPlayer.play();}catch(e){console.warn('Vimeo autoplay:',e);}
+        }else{
+          heroMode='native';native.hidden=false;native.src=url;native.muted=true;
+          native.addEventListener('canplay',()=>native.play().catch(()=>{}),{once:true});native.play().catch(()=>{});
+        }
+      }
+      async function setHeroMuted(muted){
+        heroMuted=muted;
+        try{if(heroMode==='vimeo'&&heroPlayer){await heroPlayer.setMuted(muted);if(!muted)await heroPlayer.setVolume(1);await heroPlayer.play();}
+          if(heroMode==='native'){const v=$('precallVideo');v.muted=muted;if(!muted)v.volume=1;await v.play();}}
+        catch(e){console.warn('Video sound:',e);toast('Tap the video to enable sound.');}
+        $('heroUnmute').classList.toggle('is-unmuted',!muted);
+        $('soundToggle').textContent=muted?'Unmute':'Mute';
+        $('heroUnmute').setAttribute('aria-label',muted?'Unmute the pre-call video':'Mute the pre-call video');
+      }
+      $('heroUnmute').addEventListener('click',()=>setHeroMuted(false));
+      $('soundToggle').addEventListener('click',()=>setHeroMuted(!heroMuted));
+      initHero();
+      const modal=$('videoModal'),modalFrame=$('modalFrame');
+      function closeModal(){if(modal.hidden)return;modal.hidden=true;modalFrame.replaceChildren();document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+      function openVideo(url,trigger){
+        if(!url){toast('This video will be added soon.');return;}
+        lastFocus=trigger;modalFrame.replaceChildren();const id=vimeoId(url);
+        if(id){const f=document.createElement('iframe');f.src=vimeoEmbed(id,'&autoplay=1');f.allow='autoplay; fullscreen; picture-in-picture';f.title='Boosta follow-up video';modalFrame.appendChild(f);}
+        else{const v=document.createElement('video');v.src=url;v.controls=true;v.autoplay=true;v.playsInline=true;modalFrame.appendChild(v);v.play().catch(()=>{});}
+        modal.hidden=false;document.body.style.overflow='hidden';$('modalClose').focus();
+      }
+      document.querySelectorAll('[data-video]').forEach(btn=>btn.addEventListener('click',()=>openVideo(MEDIA.next[Number(btn.dataset.video)]||'',btn)));
+      $('modalClose').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='Tab'&&!modal.hidden){const focusables=modal.querySelectorAll('button,video[controls]');if(focusables.length===1){e.preventDefault();focusables[0].focus();}}});
+      [['termsLink','terms','Terms of Service'],['privacyLink','privacy','Privacy Policy']].forEach(([id,key,label])=>{const el=$(id);if(MEDIA[key])el.href=MEDIA[key];else el.addEventListener('click',e=>{e.preventDefault();toast('Add your '+label+' URL in the MEDIA configuration.');});});
+
+      // GSAP motion: text masks, cinematic entrance, scroll parallax, card stagger, microinteractions.
+      if(!window.gsap||prefersReduced)return;
+      const gsap=window.gsap, ScrollTrigger=window.ScrollTrigger;
+      if(ScrollTrigger)gsap.registerPlugin(ScrollTrigger);
+      function splitWords(el){
+        const text=el.textContent.trim();el.setAttribute('aria-label',text);el.textContent='';
+        text.split(/\s+/).forEach((word,i)=>{const wrap=document.createElement('span');wrap.className='split-word';wrap.setAttribute('aria-hidden','true');const inner=document.createElement('span');inner.textContent=word;wrap.appendChild(inner);el.appendChild(wrap);if(i<text.split(/\s+/).length-1)el.appendChild(document.createTextNode(' '));});
+        return Array.from(el.querySelectorAll('.split-word>span'));
+      }
+      function splitChars(el){
+        const text=el.textContent.trim();el.setAttribute('aria-label',text);el.textContent='';
+        const chars=[];
+        text.split(/\s+/).forEach((word,i)=>{
+          const wordWrap=document.createElement('span');wordWrap.style.cssText='display:inline-block;white-space:nowrap';wordWrap.setAttribute('aria-hidden','true');
+          for(const ch of word){const span=document.createElement('span');span.className='split-char';span.textContent=ch;wordWrap.appendChild(span);chars.push(span);}
+          el.appendChild(wordWrap);if(i<text.split(/\s+/).length-1)el.appendChild(document.createTextNode(' '));
+        });
+        return chars;
+      }
+      const heroChars=splitChars(document.querySelector('[data-split="chars"]'));
+      const headingSplits=[...document.querySelectorAll('[data-split="words"]')].map(el=>({el,words:splitWords(el)}));
+      gsap.set(heroChars,{y:38,autoAlpha:0,rotateX:-65,transformOrigin:'50% 100%'});
+      gsap.set('[data-intro="cap"]',{y:-24,autoAlpha:0});
+      gsap.set('[data-intro="copy"]',{y:19,autoAlpha:0});
+      gsap.set('[data-intro="pills"] .detail-pill',{y:20,autoAlpha:0,scale:.94});
+      const tl=gsap.timeline({defaults:{ease:'power3.out'}});
+      tl.to('[data-intro="cap"]',{y:0,autoAlpha:1,duration:.85},0)
+        .to(heroChars,{y:0,autoAlpha:1,rotateX:0,duration:.85,stagger:.019,ease:'back.out(1.15)'},.16)
+        .to('[data-intro="copy"]',{y:0,autoAlpha:1,duration:.75},.68)
+        .to('[data-intro="pills"] .detail-pill',{y:0,autoAlpha:1,scale:1,duration:.75,stagger:.11},.8);
+      if(ScrollTrigger){
+        gsap.to('#scrollProgress',{scaleX:1,ease:'none',scrollTrigger:{start:'top top',end:'max',scrub:.3}});
+        headingSplits.forEach(({el,words})=>gsap.from(words,{yPercent:115,rotateX:-45,opacity:.1,stagger:.075,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%',once:true}}));
+        gsap.from('[data-fade]',{y:25,autoAlpha:0,duration:.85,stagger:.1,ease:'power3.out',scrollTrigger:{trigger:'.precall',start:'top 86%',once:true}});
+        gsap.from('#heroMedia',{y:75,scale:.935,autoAlpha:0,duration:1.25,ease:'power3.out',scrollTrigger:{trigger:'#heroMedia',start:'top 93%',once:true}});
+        gsap.from('.important',{y:65,autoAlpha:0,scale:.97,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:'.important',start:'top 88%',once:true}});
+        gsap.from('.important > *',{y:18,autoAlpha:0,stagger:.12,duration:.7,ease:'power2.out',scrollTrigger:{trigger:'.important',start:'top 84%',once:true}});
+        gsap.from('.video-card',{y:80,autoAlpha:0,rotateX:9,scale:.95,duration:1.15,stagger:.16,ease:'power3.out',scrollTrigger:{trigger:'.video-grid',start:'top 88%',once:true}});
+        gsap.to('.hero-media .placeholder-inner',{y:-24,ease:'none',scrollTrigger:{trigger:'.hero-media',start:'top bottom',end:'bottom top',scrub:1}});
+        gsap.from('.footer-brand, .footer-links',{y:22,autoAlpha:0,stagger:.1,duration:.8,scrollTrigger:{trigger:'.footer',start:'top 97%',once:true}});
+      }else{
+        gsap.from('.hero-media,.important,.video-card',{y:30,autoAlpha:0,duration:.8,stagger:.1});
+      }
+      document.querySelectorAll('.video-card').forEach(card=>{
+        card.addEventListener('mouseenter',()=>gsap.to(card.querySelector('.art'),{scale:1.08,rotate:1.2,duration:.7,ease:'power3.out',overwrite:true}));
+        card.addEventListener('mouseleave',()=>gsap.to(card.querySelector('.art'),{scale:1,rotate:0,duration:.7,ease:'power3.out',overwrite:true}));
+      });
+      if(window.Lenis&&innerWidth>760){
+        const lenis=new Lenis({duration:1.12,smoothWheel:true,lerp:.085,wheelMultiplier:.85});
+        if(ScrollTrigger){lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);}
+        else{function raf(t){lenis.raf(t);requestAnimationFrame(raf);}requestAnimationFrame(raf);}
+      }
+    })();
+  </script>
+</body>
+</html>
